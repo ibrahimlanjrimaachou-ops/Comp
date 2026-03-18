@@ -3,9 +3,9 @@
 ## Equipe
 
 - Ibrahim Lanjri Maachou
-- Moussa
-- Obayda
-- Alessandro
+- Moussa Kourouma
+- Oubayda Skhairi
+- Alessandro Capaldi
 
 ## Structure du projet
 
@@ -21,7 +21,7 @@
 - Page Y
 - Page Z
 
-# Obayda :
+# Oubayda :
 
 - Page X
 - Page Y
