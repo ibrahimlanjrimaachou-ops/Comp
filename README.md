@@ -12,8 +12,8 @@
 # Ibrahim :
 
 - Page d'accueil
-- Page X
-- Page Y
+- Page Calendrier des matchs
+- Page Equipe
 
 # Moussa :
 
@@ -23,12 +23,12 @@
 
 # Oubayda :
 
-- Page X
-- Page Y
-- Page Z
+- Classement
+- Actualités
+- Inscription / Participation
 
 # Alessandro :
 
-- Page X
-- Page Y
-- Page Z
+- Page Galerie
+- Page Joueurs
+- Page Infos/Contact
