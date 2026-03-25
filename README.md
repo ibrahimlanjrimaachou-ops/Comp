@@ -11,9 +11,9 @@
 
 # Ibrahim :
 
-- Page d'accueil
-- Page Calendrier des matchs
-- Page Equipe
+- Accueil
+- Calendrier
+- Équipes
 
 # Moussa :
 
@@ -29,6 +29,6 @@
 
 # Alessandro :
 
-- Page Galerie
-- Page Joueurs
-- Page Infos/Contact
+- Galerie
+- Joueurs
+- Infos/Contact
