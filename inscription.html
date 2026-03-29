@@ -3,69 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscription - Compétition de Basket</title>
+  <title>BruBasket - Inscription et participation</title>
 </head>
 <body>
-      <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="calendrier.html">Calendrier</a></li>
-        <li><a href="classement.html">Classement</a></li>
-        <li><a href="equipes.html">Équipes</a></li>
-        <li><a href="joueurs.html">Joueurs</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-  <!-- Presentation de la page d'inscription -->
+  <ul class="menu">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="calendrier.html">Calendrier</a></li>
+    <li><a href="classement.html">Classement</a></li>
+    <li><a href="equipes.html">&Eacute;quipes</a></li>
+    <li><a href="joueurs.html">Joueurs</a></li>
+    <li><a href="actualites.html">Actualit&eacute;s</a></li>
+    <li><a href="inscription.html">Inscription</a></li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
   <header>
-    <h1>Inscription à la prochaine compétition</h1>
-    <p>Rejoignez la compétition et faites partie des meilleures équipes. Inscrivez-vous dès maintenant pour participer aux matchs et tenter de décrocher le titre.</p>
+    <h1>Inscription et participation</h1>
+    <p>Rejoignez BruBasket 2026 et participez &agrave; une comp&eacute;tition conviviale et sportive &agrave; Bruxelles.</p>
   </header>
 
   <main>
+    <section>
+      <h2>Conditions de participation</h2>
+      <ul>
+        <li>Chaque &eacute;quipe peut inscrire jusqu'&agrave; 12 joueurs.</li>
+        <li>Un responsable d'&eacute;quipe doit fournir une adresse email et un num&eacute;ro de t&eacute;l&eacute;phone valides.</li>
+        <li>Les spectateurs peuvent consulter le calendrier avant de choisir leur date de venue.</li>
+        <li>Tous les participants doivent respecter les horaires et le r&egrave;glement du tournoi.</li>
+      </ul>
+    </section>
 
-    <!-- Formulaire HTML basique pour le moment -->
     <section>
       <img src="images/image-inscription.jpg" width="30%" height="30%" alt="Photo d'un panier de basket">
       <h2>Formulaire d'inscription</h2>
+      <p>Choisissez votre type de participation puis remplissez la partie correspondante.</p>
       <form action="#" method="post">
         <p>
-          <label for="nom">Nom de l'équipe :</label><br>
-          <input type="text" id="nom">
+          <label for="type-participation">Type de participation :</label><br>
+          <select id="type-participation" name="type-participation" required>
+            <option value="">Choisissez une option</option>
+            <option value="equipe">Participation en tant qu'&eacute;quipe</option>
+            <option value="spectateur">Participation en tant que spectateur</option>
+          </select>
         </p>
 
-        <p>
-          <label for="email">Email :</label><br>
-          <input type="email" id="email">
-        </p>
+        <fieldset>
+          <legend>Participation en tant qu'&eacute;quipe</legend>
+
+          <p>
+            <label for="nom-equipe">Nom de l'&eacute;quipe :</label><br>
+            <input type="text" id="nom-equipe" name="nom-equipe" placeholder="Exemple : Brussels Lions">
+          </p>
+
+          <p>
+            <label for="responsable-equipe">Nom du responsable :</label><br>
+            <input type="text" id="responsable-equipe" name="responsable-equipe" placeholder="Nom du responsable">
+          </p>
+
+          <p>
+            <label for="email-equipe">Email de contact :</label><br>
+            <input type="email" id="email-equipe" name="email-equipe" placeholder="exemple@mail.com">
+          </p>
+
+          <p>
+            <label for="telephone-equipe">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
+            <input type="tel" id="telephone-equipe" name="telephone-equipe" placeholder="04 00 00 00 00">
+          </p>
+
+          <p>
+            <label for="categorie">Cat&eacute;gorie :</label><br>
+            <select id="categorie" name="categorie">
+              <option value="">Choisissez une cat&eacute;gorie</option>
+              <option value="u17">U17</option>
+              <option value="u20">U20</option>
+              <option value="senior">Senior</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="nombre-joueurs">Nombre de joueurs :</label><br>
+            <input type="number" id="nombre-joueurs" name="nombre-joueurs" min="5" max="12">
+          </p>
+
+          <p>
+            <label for="ville-equipe">Ville repr&eacute;sent&eacute;e :</label><br>
+            <input type="text" id="ville-equipe" name="ville-equipe" placeholder="Bruxelles">
+          </p>
+
+          <p>
+            <label for="message-equipe">Message de l'&eacute;quipe :</label><br>
+            <textarea id="message-equipe" name="message-equipe" rows="5" cols="30" placeholder="Pr&eacute;cisez ici toute information utile."></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Participation en tant que spectateur</legend>
+
+          <p>
+            <label for="nom-spectateur">Nom complet :</label><br>
+            <input type="text" id="nom-spectateur" name="nom-spectateur" placeholder="Votre nom complet">
+          </p>
+
+          <p>
+            <label for="email-spectateur">Email :</label><br>
+            <input type="email" id="email-spectateur" name="email-spectateur" placeholder="exemple@mail.com">
+          </p>
+
+          <p>
+            <label for="telephone-spectateur">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
+            <input type="tel" id="telephone-spectateur" name="telephone-spectateur" placeholder="04 00 00 00 00">
+          </p>
+
+          <p>
+            <label for="date-spectateur">Date souhait&eacute;e :</label><br>
+            <input type="date" id="date-spectateur" name="date-spectateur">
+          </p>
+
+          <p>
+            <label for="nombre-places">Nombre de places :</label><br>
+            <input type="number" id="nombre-places" name="nombre-places" min="1" max="10">
+          </p>
+
+          <p>
+            <label for="message-spectateur">Message :</label><br>
+            <textarea id="message-spectateur" name="message-spectateur" rows="4" cols="30" placeholder="Pr&eacute;cisez ici votre demande."></textarea>
+          </p>
+        </fieldset>
 
         <p>
-          <label for="telephone">Numéro de téléphone :</label><br>
-          <input type="tel" id="telephone">
+          <button type="submit">Envoyer la demande</button>
         </p>
-        <p>
-          <label for="nombre-joueurs">Nombre de Joueurs dans l'équipe</label><br>
-          <input type="number" id="nombre-joueurs">
-        </p>
-        <p>
-          <label for="pays-ville">Pays ou Ville representé :</label><br>
-          <input type="text" id="pays-ville">
-        </p>
+      </form>
 
+      <form action="calendrier.html" method="get">
         <p>
-          <label for="message">Message :</label><br>
-          <textarea id="message" rows="5" cols="30"></textarea>
-        </p>
-
-        <p>
-          <button type="submit">Envoyer</button>
+          <button type="submit">Voir le calendrier</button>
         </p>
       </form>
     </section>
-    <section> 
-      <h2></h2>
+
+    <section>
+      <h2>Informations utiles</h2>
+      <p>Apr&egrave;s l'envoi du formulaire, l'organisation pourra vous recontacter pour confirmer votre participation.</p>
+      <p>Une r&eacute;ponse peut &ecirc;tre envoy&eacute;e dans un d&eacute;lai de 48 heures.</p>
     </section>
   </main>
+
+  <footer>
+    <p>Merci pour votre int&eacute;r&ecirc;t pour la comp&eacute;tition BruBasket 2026.</p>
+  </footer>
 </body>
 </html>
