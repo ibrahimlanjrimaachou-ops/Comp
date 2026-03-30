@@ -25,10 +25,10 @@
 
 - Classement
 - Actualités
-- Inscription / Participation
+- Inscription
 
 # Alessandro :
 
 - Galerie
-- Joueurs
-- Infos/Contact
+- Billetterie
+- Contact
