@@ -1,3 +1,148 @@
-body{
-    font-family: "Inter", sans-serif;
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin: 0;
+    background-color: #eaf4ff;
+    color: #16324f;
+}
+
+/* Barre de navigation simple */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 16px 24px;
+    background-color: #1d5fa2;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #dbeafe;
+    text-decoration: underline;
+}
+
+header,
+main,
+footer {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+header {
+    padding-top: 24px;
+}
+
+main {
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+footer {
+    padding-bottom: 24px;
+}
+
+.pied {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #1d5fa2;
+    color: white;
+    text-align: center;
+}
+
+.pied a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: #0f3d75;
+}
+
+/* Style de la page classement */
+.page-classement header,
+.page-classement main,
+.page-classement footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-classement section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.page-classement table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.page-classement caption {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0f3d75;
+}
+
+.page-classement th,
+.page-classement td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #c8d9eb;
+}
+
+.page-classement th {
+    background-color: #1d5fa2;
+    color: white;
+}
+
+.page-classement tbody tr:nth-child(even) {
+    background-color: #f2f8ff;
+}
+
+/* Petit bloc de boutons pour les categories */
+.boutons-classement {
+    margin-top: 16px;
+}
+
+.boutons-classement a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    border: 1px solid #1d5fa2;
+    border-radius: 8px;
+    background-color: #dcecff;
+    color: #0f3d75;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.legende-classement {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #f2f8ff;
+    border: 1px solid #c8d9eb;
+    border-radius: 8px;
+}
+
+.legende-classement p {
+    margin: 6px 0;
 }
