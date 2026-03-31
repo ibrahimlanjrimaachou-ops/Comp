@@ -188,6 +188,87 @@ h3 {
     margin-bottom: 10px;
 }
 
+/* Style de la page calendrier */
+.page-calendrier header,
+.page-calendrier main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-calendrier section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.grille-poules {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.carte-poule {
+    padding: 18px;
+    background-color: #f2f8ff;
+    border: 1px solid #c8d9eb;
+    border-radius: 10px;
+}
+
+.carte-poule h3 {
+    margin-top: 0;
+}
+
+.carte-poule ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.page-calendrier table {
+    width: 100%;
+    margin-top: 16px;
+    border-collapse: collapse;
+}
+
+.page-calendrier th,
+.page-calendrier td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #c8d9eb;
+}
+
+.page-calendrier th {
+    background-color: #1d5fa2;
+    color: white;
+}
+
+.page-calendrier tbody tr:nth-child(even) {
+    background-color: #f2f8ff;
+}
+
+/* Style de la page equipes */
+.page-equipes header,
+.page-equipes main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-equipes section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.liste-equipes {
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding-left: 24px;
+    line-height: 1.9;
+}
+
 @media (max-width: 768px) {
     .hero-accueil {
         height: calc(100vh - 62px);
@@ -200,6 +281,10 @@ h3 {
 
     .contenu-accueil h1 {
         font-size: 2.4rem;
+    }
+
+    .grille-poules {
+        grid-template-columns: 1fr;
     }
 }
 
