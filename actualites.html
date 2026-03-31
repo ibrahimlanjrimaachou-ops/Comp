@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BruBasket - Actualit&eacute;s</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-actualites">
-  <ul class="menu">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="calendrier.html">Calendrier</a></li>
-    <li><a href="equipes.html">&Eacute;quipes</a></li>
-    <li><a href="classement.html">Classement</a></li>
-    <li><a href="actualites.html">Actualit&eacute;s</a></li>
-    <li><a href="inscription.html">Inscription</a></li>
-    <li><a href="galerie.html">Galerie</a></li>
-    <li><a href="billeterie.html">Billetterie</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+  <nav class="barre-nav" aria-label="Navigation principale">
+    <a class="nav-logo" href="index.html">
+      <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+      <span>BruBasket</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="calendrier.html">Calendrier</a></li>
+      <li><a href="equipes.html">&Eacute;quipes</a></li>
+      <li><a href="classement.html">Classement</a></li>
+      <li><a href="actualites.html" class="active">Actualit&eacute;s</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="billeterie.html">Billetterie</a></li>
+    </ul>
+    <a class="nav-contact" href="contact.html">Contact</a>
+  </nav>
 
   <header>
     <h1>Actualit&eacute;s</h1>
@@ -29,27 +38,28 @@
       <h2>Derni&egrave;res nouvelles</h2>
 
       <article class="carte-actu">
+        <h3>Organisation de la finale</h3>
+        <p><strong>Date :</strong> <time datetime="2026-10-20">20 octobre 2026</time></p>
+        <p>Les organisateurs pr&eacute;parent activement la journ&eacute;e de finale afin d'offrir une cl&ocirc;ture &agrave; la hauteur de l'&eacute;v&eacute;nement. L'accueil du public, la gestion des &eacute;quipes qualifi&eacute;es, la remise des prix et l'animation autour du terrain font partie des &eacute;l&eacute;ments en cours de coordination. Une attention particuli&egrave;re est accord&eacute;e &agrave; l'ambiance du dernier jour, qui doit mettre en valeur les performances sportives r&eacute;alis&eacute;es pendant toute la semaine. L'objectif est de conclure le tournoi dans une atmosph&egrave;re festive, conviviale et m&eacute;morable.</p>
+        <p><a href="calendrier.html?phase=finale&date=2026-10-20">Consulter le programme de la finale</a></p>
+      </article>
+
+      <article class="carte-actu">
         <h3>Lancement officiel du tournoi</h3>
-        <p><strong>Date :</strong> 15 octobre 2026</p>
-        <p>La comp&eacute;tition commencera avec une c&eacute;r&eacute;monie d'ouverture, la pr&eacute;sentation des &eacute;quipes et le premier match de la journ&eacute;e.</p>
+        <p><strong>Date :</strong> <time datetime="2026-10-15">15 octobre 2026</time></p>
+        <p>Le tournoi BruBasket 2026 d&eacute;butera avec une c&eacute;r&eacute;monie d'ouverture organis&eacute;e en d&eacute;but d'apr&egrave;s-midi, juste avant les premiers matchs. Ce moment permettra de pr&eacute;senter les &eacute;quipes participantes, les diff&eacute;rentes cat&eacute;gories et le programme g&eacute;n&eacute;ral de la semaine. Les joueurs, les accompagnateurs et le public pourront d&eacute;couvrir l'ambiance de la comp&eacute;tition avant le coup d'envoi officiel. Cette ouverture marquera le d&eacute;but de plusieurs jours plac&eacute;s sous le signe du sport, du fair-play et du spectacle.</p>
       </article>
 
       <article class="carte-actu">
         <h3>Nouvelles inscriptions confirm&eacute;es</h3>
-        <p><strong>Date :</strong> 18 septembre 2026</p>
-        <p>Trois nouvelles &eacute;quipes ont confirm&eacute; leur participation cette semaine, ce qui rend le tournoi encore plus comp&eacute;titif.</p>
-      </article>
-
-      <article class="carte-actu">
-        <h3>Organisation de la finale</h3>
-        <p><strong>Date :</strong> 20 octobre 2026</p>
-        <p>Les organisateurs pr&eacute;parent d&eacute;j&agrave; la grande finale, la remise des prix et l'accueil du public pour le dernier jour.</p>
+        <p><strong>Date :</strong> <time datetime="2026-09-18">18 septembre 2026</time></p>
+        <p>Trois nouvelles &eacute;quipes ont confirm&eacute; leur inscription cette semaine, ce qui rapproche encore davantage le tournoi de sa capacit&eacute; maximale. Cette augmentation du nombre de participants promet une comp&eacute;tition plus intense et plus vari&eacute;e, avec des profils d'&eacute;quipes diff&eacute;rents et des styles de jeu compl&eacute;mentaires. Les organisateurs poursuivent le travail de r&eacute;partition dans les poules afin de garantir un tournoi &eacute;quilibr&eacute; et dynamique. Les derni&egrave;res places restantes devraient &ecirc;tre attribu&eacute;es prochainement.</p>
       </article>
 
       <article class="carte-actu">
         <h3>Ouverture de la participation</h3>
-        <p><strong>Date :</strong> 5 septembre 2026</p>
-        <p>Les inscriptions sont ouvertes pour les &eacute;quipes et les joueurs motiv&eacute;s qui souhaitent rejoindre l'&eacute;v&eacute;nement.</p>
+        <p><strong>Date :</strong> <time datetime="2026-09-05">5 septembre 2026</time></p>
+        <p>Les inscriptions sont officiellement ouvertes pour les &eacute;quipes, les responsables et les spectateurs qui souhaitent prendre part &agrave; l'&eacute;dition 2026 de BruBasket. Les candidats peuvent d&egrave;s maintenant consulter les conditions de participation, choisir leur cat&eacute;gorie et transmettre les informations demand&eacute;es via le formulaire en ligne. Cette phase d'inscription est importante pour permettre aux organisateurs d'anticiper la logistique, la composition des poules et le planning des rencontres. Les personnes int&eacute;ress&eacute;es sont invit&eacute;es &agrave; s'inscrire rapidement afin de garantir leur place.</p>
       </article>
     </section>
 
@@ -64,7 +74,9 @@
   </main>
 
   <footer class="pied">
-    <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket Num&eacute;ro : 04 75 89 68 68 Adresse : Rue Eug&egrave;ne Falco n&deg;78 1000 Bruxelles
+    <address>
+      <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+    </address>
   </footer>
 </body>
 </html>

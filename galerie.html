@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BruBasket - Galerie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Compétition de Basket - Galerie</title>
 </head>
-
-<body class="page-actualites">
+<body class="page-galerie">
+    <nav class="barre-nav" aria-label="Navigation principale">
+        <a class="nav-logo" href="index.html">
+            <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+            <span>BruBasket</span>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="calendrier.html">Calendrier</a></li>
+            <li><a href="equipes.html">&Eacute;quipes</a></li>
+            <li><a href="classement.html">Classement</a></li>
+            <li><a href="actualites.html">Actualit&eacute;s</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="galerie.html" class="active">Galerie</a></li>
+            <li><a href="billeterie.html">Billetterie</a></li>
+        </ul>
+        <a class="nav-contact" href="contact.html">Contact</a>
+    </nav>
 
     <header>
-        <h1>Compétition de Basket 2026</h1>
-
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="calendrier.html">Calendrier</a></li>
-                <li><a href="classement.html">Classement</a></li>
-                <li><a href="equipes.html">Équipes</a></li>
-                <li><a href="actualites.html">Actualités</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="billeterie.html">Billetterie</a></li>
-                <li><a href="galerie.html" class="active">Galerie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Galerie</h1>
+        <p>Retrouvez quelques images du tournoi BruBasket et de son ambiance sur le terrain comme dans les tribunes.</p>
     </header>
 
     <main>
+        <section>
+            <h2>Match en vid&eacute;o</h2>
+            <p>Retrouvez ici un extrait vid&eacute;o d'un match pour d&eacute;couvrir l'intensit&eacute; et l'ambiance du basketball belge.</p>
+            <div class="video-galerie">
+                <video controls>
+                    <source src="images/videopourlagalerie.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture de la vid&eacute;o.
+                </video>
+            </div>
+        </section>
 
         <section>
-            <h2>Quelques photos de la compétition</h2>
-
-            <div class="carte-actu">
-                <figure>
-                    <img src="images/dunk-spectaculaire.jpg" alt="Dunk spectaculaire">
+            <h2>Quelques moments du tournoi</h2>
+            <div class="grille-galerie">
+                <figure class="carte-galerie">
+                    <img class="image-haut" src="images/dunk-spectaculaire.jpg" alt="Dunk spectaculaire">
                     <figcaption>Dunk spectaculaire</figcaption>
                 </figure>
-            </div>
 
-            <div class="carte-actu">
-                <figure>
-                    <img src="images/equipe.jpg" alt="Equipe compétition">
-                    <figcaption>Une des meilleures équipes de la compétition</figcaption>
+                <figure class="carte-galerie">
+                    <img src="images/equipe.jpg" alt="Une &eacute;quipe du tournoi">
+                    <figcaption>Une des meilleures &eacute;quipes du tournoi</figcaption>
                 </figure>
-            </div>
 
-            <div class="carte-actu">
-                <figure>
+                <figure class="carte-galerie">
                     <img src="images/public.jpeg" alt="Public en feu">
                     <figcaption>Public en feu</figcaption>
                 </figure>
             </div>
-
         </section>
 
+        <section>
+            <h2>Revivez l'ambiance BruBasket</h2>
+            <p>Entre les actions spectaculaires, l'&eacute;nergie des &eacute;quipes et le soutien du public, BruBasket met en avant le basketball dans une ambiance conviviale et sportive.</p>
+            <p><a class="bouton-decouvrir" href="actualites.html">Voir les actualit&eacute;s</a></p>
+        </section>
     </main>
 
-    <footer>
-        <div class="pied">
-            <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> 
-            | @BruBasket  
-            | Numéro : 04 75 89 68 68  
-            | Adresse : Rue Eugène Falco n°78 1000 Bruxelles
-        </div>   
+    <footer class="pied">
+        <address>
+            <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+        </address>
     </footer>
-
 </body>
 </html>

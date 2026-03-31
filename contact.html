@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BruBasket - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Compétition de Basket - Contact</title>
 </head>
-<body>
+<body class="page-contact">
+    <nav class="barre-nav" aria-label="Navigation principale">
+        <a class="nav-logo" href="index.html">
+            <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+            <span>BruBasket</span>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="calendrier.html">Calendrier</a></li>
+            <li><a href="equipes.html">&Eacute;quipes</a></li>
+            <li><a href="classement.html">Classement</a></li>
+            <li><a href="actualites.html">Actualit&eacute;s</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="billeterie.html">Billetterie</a></li>
+        </ul>
+        <a class="nav-contact active" href="contact.html">Contact</a>
+    </nav>
+
     <header>
-        <h1>Compétition de Basket 2026</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="calendrier.html">Calendrier</a></li>
-                <li><a href="classement.html">Classement</a></li>
-                <li><a href="equipes.html">Équipes</a></li>
-                <li><a href="actualites.html">Actualités</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="billeterie.html">Billeterie</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Contact</h1>
+        <p>Une question sur le tournoi, les inscriptions ou la billetterie ? Contactez l'&eacute;quipe BruBasket.</p>
     </header>
+
     <main>
-    <section>
-        <h2>Infos & Contact</h2>
+        <section>
+            <h2>Envoyer un message</h2>
+            <p>Remplissez ce formulaire et nous vous r&eacute;pondrons dans les plus brefs d&eacute;lais.</p>
 
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Contact</legend>
+            <form action="contact.html" method="post">
+                <fieldset>
+                    <legend>Formulaire de contact</legend>
 
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required>
+                    <p>
+                        <label for="nom">Nom :</label><br>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required minlength="2" maxlength="60" autocomplete="name">
+                    </p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <p>
+                        <label for="email">Email :</label><br>
+                        <input type="email" id="email" name="email" placeholder="exemple@mail.com" required autocomplete="email">
+                    </p>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                    <p>
+                        <label for="sujet">Sujet :</label><br>
+                        <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message" required minlength="3" maxlength="80" autocomplete="off">
+                    </p>
 
-                <button type="submit">Envoyer</button>
-            </fieldset>
-        </form>
-    </section>
+                    <p>
+                        <label for="message">Message :</label><br>
+                        <textarea id="message" name="message" rows="6" placeholder="Expliquez ici votre demande." required maxlength="800"></textarea>
+                    </p>
 
-    <section class="info">
-        <h3>Informations sur la Compétition</h3>
-        <p><strong>Date:</strong> 15-20 Octobre 2026</p>
-        <p><strong>Lieu:</strong> Rue Eugène Falco n°78, 1000 Bruxelles</p>
-        <p><strong>Email:</strong> brubasket@gmail.com</p>
-        <p><strong>Tél:</strong> 04 75 89 68 68</p>
-        <p><strong>Site:</strong> BruBasket</p>
-    </section>
+                    <p>
+                        <button type="submit">Envoyer</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Informations utiles</h2>
+            <address class="coordonnees-contact">
+                <p><strong>Date du tournoi :</strong> du <time datetime="2026-10-15">15 octobre 2026</time> au <time datetime="2026-10-20">20 octobre 2026</time></p>
+                <p><strong>Lieu :</strong> Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles</p>
+                <p><strong>Email :</strong> <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a></p>
+                <p><strong>T&eacute;l&eacute;phone :</strong> <a href="tel:+32475896868">04 75 89 68 68</a></p>
+                <p><strong>Horaires de contact :</strong> du lundi au vendredi, de <time datetime="09:00">9h</time> &agrave; <time datetime="18:00">18h</time></p>
+            </address>
+        </section>
     </main>
-    <footer>
-      <div class = "pied"><a href ="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket  Numéro : 04 75 89 68 68 Adresse : Rue Eugène Falco n°78 1000 Bruxelles</div>   
+
+    <footer class="pied">
+        <address>
+            <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : <a href="tel:+32475896868">04 75 89 68 68</a> | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+        </address>
     </footer>
 </body>
 </html>

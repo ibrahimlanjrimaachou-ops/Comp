@@ -4,28 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BruBasket - Accueil</title>
-<link rel="icon" href="images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-accueil">
-    <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="calendrier.html">Calendrier</a></li>
-        <li><a href="equipes.html">&Eacute;quipes</a></li>
-        <li><a href="classement.html">Classement</a></li>
-        <li><a href="actualites.html">Actualit&eacute;s</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="billeterie.html">Billetterie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <nav class="barre-nav" aria-label="Navigation principale">
+        <a class="nav-logo" href="index.html">
+            <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+            <span>BruBasket</span>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="calendrier.html">Calendrier</a></li>
+            <li><a href="equipes.html">&Eacute;quipes</a></li>
+            <li><a href="classement.html">Classement</a></li>
+            <li><a href="actualites.html">Actualit&eacute;s</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="billeterie.html">Billetterie</a></li>
+        </ul>
+        <a class="nav-contact" href="contact.html">Contact</a>
+    </nav>
 
     <main>
         <section class="hero-accueil">
-            <img src="images/brubasket-accueil.jpeg" alt="Joueurs pendant le tournoi de basketball BruBasket">
+            <img src="images/brubasket-accueil.jpeg" alt="" aria-hidden="true">
             <div class="contenu-accueil">
                 <p class="sur-titre-accueil">Tournoi 2026</p>
                 <h1>BruBasket</h1>
@@ -55,13 +60,17 @@
             <h2>Liens utiles</h2>
             <p>Retrouvez les pages importantes du site en un clic.</p>
             <p class="actions-accueil">
-                <a class="bouton-decouvrir" href="calendrier.html">Voir le calendrier</a>
+                <a class="bouton-decouvrir" href="calendrier.html?phase=finale&jour=20-octobre">Voir le calendrier</a>
                 <a class="bouton-decouvrir" href="inscription.html">S'inscrire</a>
                 <a class="bouton-decouvrir" href="actualites.html">Actualit&eacute;s</a>
             </p>
         </section>
     </main>
 
-    <footer class="pied"><a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket Num&eacute;ro : 04 75 89 68 68 Adresse : Rue Eug&egrave;ne Falco n&deg;78 1000 Bruxelles</footer>
+    <footer class="pied">
+        <address>
+            <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+        </address>
+    </footer>
 </body>
 </html>

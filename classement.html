@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BruBasket - Classement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-classement">
-  <ul class="menu">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="calendrier.html">Calendrier</a></li>
-    <li><a href="equipes.html">&Eacute;quipes</a></li>
-    <li><a href="classement.html">Classement</a></li>
-    <li><a href="actualites.html">Actualit&eacute;s</a></li>
-    <li><a href="inscription.html">Inscription</a></li>
-    <li><a href="galerie.html">Galerie</a></li>
-    <li><a href="billeterie.html">Billetterie</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+  <nav class="barre-nav" aria-label="Navigation principale">
+    <a class="nav-logo" href="index.html">
+      <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+      <span>BruBasket</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="calendrier.html">Calendrier</a></li>
+      <li><a href="equipes.html">&Eacute;quipes</a></li>
+      <li><a href="classement.html" class="active">Classement</a></li>
+      <li><a href="actualites.html">Actualit&eacute;s</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="billeterie.html">Billetterie</a></li>
+    </ul>
+    <a class="nav-contact" href="contact.html">Contact</a>
+  </nav>
 
   <header>
     <h1>Classement</h1>
@@ -51,23 +60,23 @@
       <h2>Classement U17</h2>
       <p>Voici un exemple de classement simple apr&egrave;s les premiers matchs du tournoi.</p>
 
-      <table border="1">
+      <table>
         <caption>Classement provisoire U17</caption>
         <thead>
           <tr>
-            <th>Position</th>
-            <th>&Eacute;quipe</th>
-            <th>Matchs jou&eacute;s</th>
-            <th>Victoires</th>
-            <th>D&eacute;faites</th>
-            <th>Points</th>
-            <th>Forme</th>
+            <th scope="col">Position</th>
+            <th scope="col">&Eacute;quipe</th>
+            <th scope="col">Matchs jou&eacute;s</th>
+            <th scope="col">Victoires</th>
+            <th scope="col">D&eacute;faites</th>
+            <th scope="col">Points</th>
+            <th scope="col">Forme</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>Lions</td>
+            <th scope="row">Lions</th>
             <td>4</td>
             <td>4</td>
             <td>0</td>
@@ -76,7 +85,7 @@
           </tr>
           <tr>
             <td>2</td>
-            <td>Tigers</td>
+            <th scope="row">Tigers</th>
             <td>4</td>
             <td>3</td>
             <td>1</td>
@@ -85,7 +94,7 @@
           </tr>
           <tr>
             <td>3</td>
-            <td>Eagles</td>
+            <th scope="row">Eagles</th>
             <td>4</td>
             <td>2</td>
             <td>2</td>
@@ -94,7 +103,7 @@
           </tr>
           <tr>
             <td>4</td>
-            <td>Bulls</td>
+            <th scope="row">Bulls</th>
             <td>4</td>
             <td>1</td>
             <td>3</td>
@@ -103,7 +112,7 @@
           </tr>
           <tr>
             <td>5</td>
-            <td>Sharks</td>
+            <th scope="row">Sharks</th>
             <td>4</td>
             <td>1</td>
             <td>3</td>
@@ -112,7 +121,7 @@
           </tr>
           <tr>
             <td>6</td>
-            <td>Falcons</td>
+            <th scope="row">Falcons</th>
             <td>4</td>
             <td>0</td>
             <td>4</td>
@@ -125,23 +134,23 @@
 
     <section id="u18">
       <h2>Classement U18</h2>
-      <table border="1">
+      <table>
         <caption>Classement provisoire U18</caption>
         <thead>
           <tr>
-            <th>Position</th>
-            <th>&Eacute;quipe</th>
-            <th>Matchs jou&eacute;s</th>
-            <th>Victoires</th>
-            <th>D&eacute;faites</th>
-            <th>Points</th>
-            <th>Forme</th>
+            <th scope="col">Position</th>
+            <th scope="col">&Eacute;quipe</th>
+            <th scope="col">Matchs jou&eacute;s</th>
+            <th scope="col">Victoires</th>
+            <th scope="col">D&eacute;faites</th>
+            <th scope="col">Points</th>
+            <th scope="col">Forme</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>Brussels Stars</td>
+            <th scope="row">Brussels Stars</th>
             <td>4</td>
             <td>4</td>
             <td>0</td>
@@ -150,7 +159,7 @@
           </tr>
           <tr>
             <td>2</td>
-            <td>Blue Rockets</td>
+            <th scope="row">Blue Rockets</th>
             <td>4</td>
             <td>3</td>
             <td>1</td>
@@ -159,7 +168,7 @@
           </tr>
           <tr>
             <td>3</td>
-            <td>Thunder Kids</td>
+            <th scope="row">Thunder Kids</th>
             <td>4</td>
             <td>2</td>
             <td>2</td>
@@ -168,7 +177,7 @@
           </tr>
           <tr>
             <td>4</td>
-            <td>Red Storm</td>
+            <th scope="row">Red Storm</th>
             <td>4</td>
             <td>1</td>
             <td>3</td>
@@ -181,23 +190,23 @@
 
     <section id="u20">
       <h2>Classement U20</h2>
-      <table border="1">
+      <table>
         <caption>Classement provisoire U20</caption>
         <thead>
           <tr>
-            <th>Position</th>
-            <th>&Eacute;quipe</th>
-            <th>Matchs jou&eacute;s</th>
-            <th>Victoires</th>
-            <th>D&eacute;faites</th>
-            <th>Points</th>
-            <th>Forme</th>
+            <th scope="col">Position</th>
+            <th scope="col">&Eacute;quipe</th>
+            <th scope="col">Matchs jou&eacute;s</th>
+            <th scope="col">Victoires</th>
+            <th scope="col">D&eacute;faites</th>
+            <th scope="col">Points</th>
+            <th scope="col">Forme</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>Urban Wolves</td>
+            <th scope="row">Urban Wolves</th>
             <td>4</td>
             <td>4</td>
             <td>0</td>
@@ -206,7 +215,7 @@
           </tr>
           <tr>
             <td>2</td>
-            <td>Basket Pulse</td>
+            <th scope="row">Basket Pulse</th>
             <td>4</td>
             <td>3</td>
             <td>1</td>
@@ -215,7 +224,7 @@
           </tr>
           <tr>
             <td>3</td>
-            <td>Rapid Fire</td>
+            <th scope="row">Rapid Fire</th>
             <td>4</td>
             <td>2</td>
             <td>2</td>
@@ -224,7 +233,7 @@
           </tr>
           <tr>
             <td>4</td>
-            <td>Street Dunkers</td>
+            <th scope="row">Street Dunkers</th>
             <td>4</td>
             <td>1</td>
             <td>3</td>
@@ -238,7 +247,9 @@
   </main>
 
   <footer class="pied">
-    <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket Num&eacute;ro : 04 75 89 68 68 Adresse : Rue Eug&egrave;ne Falco n&deg;78 1000 Bruxelles
+    <address>
+      <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+    </address>
   </footer>
 </body>
 </html>

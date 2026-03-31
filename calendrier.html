@@ -4,24 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BruBasket - Calendrier</title>
-<link rel="icon" href="images/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-calendrier">
-    <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="calendrier.html">Calendrier</a></li>
-        <li><a href="equipes.html">&Eacute;quipes</a></li>
-        <li><a href="classement.html">Classement</a></li>
-        <li><a href="actualites.html">Actualit&eacute;s</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="billeterie.html">Billetterie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <nav class="barre-nav" aria-label="Navigation principale">
+        <a class="nav-logo" href="index.html">
+            <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+            <span>BruBasket</span>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="calendrier.html" class="active">Calendrier</a></li>
+            <li><a href="equipes.html">&Eacute;quipes</a></li>
+            <li><a href="classement.html">Classement</a></li>
+            <li><a href="actualites.html">Actualit&eacute;s</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="billeterie.html">Billetterie</a></li>
+        </ul>
+        <a class="nav-contact" href="contact.html">Contact</a>
+    </nav>
 
     <header>
         <h1>Calendrier du tournoi</h1>
@@ -67,8 +72,8 @@
                     <ul>
                         <li>Ice Dragons</li>
                         <li>Phantom Kings</li>
-                        <li>...</li>
-                        <li>...</li>
+                        <li>Brussels Giants</li>
+                        <li>Royal Dunkers</li>
                     </ul>
                 </article>
             </div>
@@ -77,32 +82,33 @@
         <section>
             <h2>Dates des matchs</h2>
             <table>
+                <caption>Calendrier des matchs de poule</caption>
                 <thead>
                     <tr>
-                        <th>Phase</th>
-                        <th>Date</th>
-                        <th>Horaire</th>
+                        <th scope="col">Phase</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Horaire</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Poule A</td>
-                        <td>15 octobre 2026</td>
+                        <th scope="row">Poule A</th>
+                        <td><time datetime="2026-10-15">15 octobre 2026</time></td>
                         <td>12h - 20h</td>
                     </tr>
                     <tr>
-                        <td>Poule B</td>
-                        <td>16 octobre 2026</td>
+                        <th scope="row">Poule B</th>
+                        <td><time datetime="2026-10-16">16 octobre 2026</time></td>
                         <td>12h - 20h</td>
                     </tr>
                     <tr>
-                        <td>Poule C</td>
-                        <td>17 octobre 2026</td>
+                        <th scope="row">Poule C</th>
+                        <td><time datetime="2026-10-17">17 octobre 2026</time></td>
                         <td>12h - 20h</td>
                     </tr>
                     <tr>
-                        <td>Poule D</td>
-                        <td>18 octobre 2026</td>
+                        <th scope="row">Poule D</th>
+                        <td><time datetime="2026-10-18">18 octobre 2026</time></td>
                         <td>12h - 20h</td>
                     </tr>
                 </tbody>
@@ -111,11 +117,31 @@
 
         <section>
             <h2>Phases finales</h2>
-            <p><strong>Quarts et demi-finales :</strong> 19 octobre 2026 de 15h &agrave; 20h</p>
-            <p><strong>Finale :</strong> 20 octobre 2026 &agrave; 18h</p>
+            <table>
+                <caption>Programme des phases finales</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Phase</th>
+                        <th scope="col">D&eacute;tails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Quarts et demi-finales</th>
+                        <td><time datetime="2026-10-19">19 octobre 2026</time> de 15h &agrave; 20h</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Finale : <time datetime="2026-10-20T18:00">20 octobre 2026 &agrave; 18h</time></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
-    <footer class="pied"><a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket Num&eacute;ro : 04 75 89 68 68 Adresse : Rue Eug&egrave;ne Falco n&deg;78 1000 Bruxelles</footer>
+    <footer class="pied">
+        <address>
+            <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+        </address>
+    </footer>
 </body>
 </html>

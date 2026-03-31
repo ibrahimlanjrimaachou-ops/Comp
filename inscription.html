@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BruBasket - Inscription et participation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-inscription">
-  <ul class="menu">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="calendrier.html">Calendrier</a></li>
-    <li><a href="equipes.html">&Eacute;quipes</a></li>
-    <li><a href="classement.html">Classement</a></li>
-    <li><a href="actualites.html">Actualit&eacute;s</a></li>
-    <li><a href="inscription.html">Inscription</a></li>
-    <li><a href="galerie.html">Galerie</a></li>
-    <li><a href="billeterie.html">Billetterie</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+  <nav class="barre-nav" aria-label="Navigation principale">
+    <a class="nav-logo" href="index.html">
+      <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+      <span>BruBasket</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="calendrier.html">Calendrier</a></li>
+      <li><a href="equipes.html">&Eacute;quipes</a></li>
+      <li><a href="classement.html">Classement</a></li>
+      <li><a href="actualites.html">Actualit&eacute;s</a></li>
+      <li><a href="inscription.html" class="active">Inscription</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="billeterie.html">Billetterie</a></li>
+    </ul>
+    <a class="nav-contact" href="contact.html">Contact</a>
+  </nav>
 
   <header>
     <h1>Inscription et participation</h1>
@@ -36,105 +45,117 @@
     </section>
 
     <section>
-      <img src="images/image-inscription.jpg" width="30%" height="30%" alt="Photo d'un panier de basket">
+      <img class="illustration-inscription" src="images/image-inscription.jpg" alt="" aria-hidden="true">
       <h2>Formulaire d'inscription</h2>
       <p>Choisissez votre type de participation puis remplissez la partie correspondante.</p>
-      <form action="#" method="post">
-        <p>
-          <label for="type-participation">Type de participation :</label><br>
-          <select id="type-participation" name="type-participation" required>
-            <option value="">Choisissez une option</option>
-            <option value="equipe">Participation en tant qu'&eacute;quipe</option>
-            <option value="spectateur">Participation en tant que spectateur</option>
-          </select>
-        </p>
+      <input type="radio" id="participation-equipe" name="type-participation" value="equipe" checked>
+      <input type="radio" id="participation-spectateur" name="type-participation" value="spectateur">
 
-        <fieldset>
-          <legend>Participation en tant qu'&eacute;quipe</legend>
-
-          <p>
-            <label for="nom-equipe">Nom de l'&eacute;quipe :</label><br>
-            <input type="text" id="nom-equipe" name="nom-equipe" placeholder="Exemple : Brussels Lions">
-          </p>
-
-          <p>
-            <label for="responsable-equipe">Nom du responsable :</label><br>
-            <input type="text" id="responsable-equipe" name="responsable-equipe" placeholder="Nom du responsable">
-          </p>
-
-          <p>
-            <label for="email-equipe">Email de contact :</label><br>
-            <input type="email" id="email-equipe" name="email-equipe" placeholder="exemple@mail.com">
-          </p>
-
-          <p>
-            <label for="telephone-equipe">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
-            <input type="tel" id="telephone-equipe" name="telephone-equipe" placeholder="04 00 00 00 00">
-          </p>
-
-          <p>
-            <label for="categorie">Cat&eacute;gorie :</label><br>
-            <select id="categorie" name="categorie">
-              <option value="">Choisissez une cat&eacute;gorie</option>
-              <option value="u17">U17</option>
-              <option value="u20">U20</option>
-              <option value="senior">Senior</option>
-            </select>
-          </p>
-
-          <p>
-            <label for="nombre-joueurs">Nombre de joueurs :</label><br>
-            <input type="number" id="nombre-joueurs" name="nombre-joueurs" min="5" max="12">
-          </p>
-
-          <p>
-            <label for="ville-equipe">Ville repr&eacute;sent&eacute;e :</label><br>
-            <input type="text" id="ville-equipe" name="ville-equipe" placeholder="Bruxelles">
-          </p>
-
-          <p>
-            <label for="message-equipe">Message de l'&eacute;quipe :</label><br>
-            <textarea id="message-equipe" name="message-equipe" rows="5" cols="30" placeholder="Pr&eacute;cisez ici toute information utile."></textarea>
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Participation en tant que spectateur</legend>
-
-          <p>
-            <label for="nom-spectateur">Nom complet :</label><br>
-            <input type="text" id="nom-spectateur" name="nom-spectateur" placeholder="Votre nom complet">
-          </p>
-
-          <p>
-            <label for="email-spectateur">Email :</label><br>
-            <input type="email" id="email-spectateur" name="email-spectateur" placeholder="exemple@mail.com">
-          </p>
-
-          <p>
-            <label for="telephone-spectateur">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
-            <input type="tel" id="telephone-spectateur" name="telephone-spectateur" placeholder="04 00 00 00 00">
-          </p>
-
-          <p>
-            <label for="date-spectateur">Date souhait&eacute;e :</label><br>
-            <input type="date" id="date-spectateur" name="date-spectateur">
-          </p>
-
-          <p>
-            <label for="nombre-places">Nombre de places :</label><br>
-            <input type="number" id="nombre-places" name="nombre-places" min="1" max="10">
-          </p>
-
-          <p>
-            <label for="message-spectateur">Message :</label><br>
-            <textarea id="message-spectateur" name="message-spectateur" rows="4" cols="30" placeholder="Pr&eacute;cisez ici votre demande."></textarea>
-          </p>
-        </fieldset>
+      <div class="choix-participation">
+        <p class="titre-choix">Type de participation</p>
 
         <p>
-          <button type="submit">Envoyer la demande</button>
+          <label for="participation-equipe">Participation en tant qu'&eacute;quipe</label>
         </p>
+
+        <p>
+          <label for="participation-spectateur">Participation en tant que spectateur</label>
+        </p>
+      </div>
+
+      <form class="bloc-participation bloc-equipe" action="inscription.html" method="post">
+          <fieldset>
+            <legend>Participation en tant qu'&eacute;quipe</legend>
+
+            <p>
+              <label for="nom-equipe">Nom de l'&eacute;quipe :</label><br>
+              <input type="text" id="nom-equipe" name="nom-equipe" placeholder="Exemple : Brussels Lions" required minlength="2" maxlength="40" autocomplete="organization">
+            </p>
+
+            <p>
+              <label for="responsable-equipe">Nom du responsable :</label><br>
+              <input type="text" id="responsable-equipe" name="responsable-equipe" placeholder="Nom du responsable" required minlength="2" maxlength="60" autocomplete="name">
+            </p>
+
+            <p>
+              <label for="email-equipe">Email de contact :</label><br>
+              <input type="email" id="email-equipe" name="email-equipe" placeholder="exemple@mail.com" required autocomplete="email">
+            </p>
+
+            <p>
+              <label for="telephone-equipe">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
+              <input type="tel" id="telephone-equipe" name="telephone-equipe" placeholder="04 00 00 00 00" required autocomplete="tel" inputmode="tel" maxlength="20">
+            </p>
+
+            <p>
+              <label for="categorie">Cat&eacute;gorie :</label><br>
+              <select id="categorie" name="categorie" required>
+                <option value="" disabled selected>Choisissez une cat&eacute;gorie</option>
+                <option value="u17">U17</option>
+                <option value="u20">U20</option>
+                <option value="senior">Senior</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="nombre-joueurs">Nombre de joueurs :</label><br>
+              <input type="number" id="nombre-joueurs" name="nombre-joueurs" min="5" max="12" required>
+            </p>
+
+            <p>
+              <label for="ville-equipe">Ville repr&eacute;sent&eacute;e :</label><br>
+              <input type="text" id="ville-equipe" name="ville-equipe" placeholder="Bruxelles" required minlength="2" maxlength="40" autocomplete="address-level2">
+            </p>
+
+            <p>
+              <label for="message-equipe">Message de l'&eacute;quipe :</label><br>
+              <textarea id="message-equipe" name="message-equipe" rows="5" cols="30" placeholder="Pr&eacute;cisez ici toute information utile." maxlength="500"></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Envoyer la demande</button>
+            </p>
+          </fieldset>
+      </form>
+
+      <form class="bloc-participation bloc-spectateur" action="inscription.html" method="post">
+          <fieldset>
+            <legend>Participation en tant que spectateur</legend>
+
+            <p>
+              <label for="nom-spectateur">Nom complet :</label><br>
+              <input type="text" id="nom-spectateur" name="nom-spectateur" placeholder="Votre nom complet" required minlength="2" maxlength="60" autocomplete="name">
+            </p>
+
+            <p>
+              <label for="email-spectateur">Email :</label><br>
+              <input type="email" id="email-spectateur" name="email-spectateur" placeholder="exemple@mail.com" required autocomplete="email">
+            </p>
+
+            <p>
+              <label for="telephone-spectateur">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
+              <input type="tel" id="telephone-spectateur" name="telephone-spectateur" placeholder="04 00 00 00 00" required autocomplete="tel" inputmode="tel" maxlength="20">
+            </p>
+
+            <p>
+              <label for="date-spectateur">Date souhait&eacute;e :</label><br>
+              <input type="date" id="date-spectateur" name="date-spectateur" required min="2026-10-15" max="2026-10-20">
+            </p>
+
+            <p>
+              <label for="nombre-places">Nombre de places :</label><br>
+              <input type="number" id="nombre-places" name="nombre-places" min="1" max="10" required>
+            </p>
+
+            <p>
+              <label for="message-spectateur">Message :</label><br>
+              <textarea id="message-spectateur" name="message-spectateur" rows="4" cols="30" placeholder="Pr&eacute;cisez ici votre demande." maxlength="500"></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Envoyer la demande</button>
+            </p>
+          </fieldset>
       </form>
 
       <form action="calendrier.html" method="get">
@@ -152,7 +173,9 @@
   </main>
 
   <footer class="pied">
-    <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket Num&eacute;ro : 04 75 89 68 68 Adresse : Rue Eug&egrave;ne Falco n&deg;78 1000 Bruxelles
+    <address>
+      <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+    </address>
   </footer>
 </body>
 </html>

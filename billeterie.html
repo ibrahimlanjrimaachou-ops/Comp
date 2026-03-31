@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Billetterie - BruBasket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="page-classement">
+<body class="page-billeterie">
+  <nav class="barre-nav" aria-label="Navigation principale">
+    <a class="nav-logo" href="index.html">
+      <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+      <span>BruBasket</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="calendrier.html">Calendrier</a></li>
+      <li><a href="equipes.html">&Eacute;quipes</a></li>
+      <li><a href="classement.html">Classement</a></li>
+      <li><a href="actualites.html">Actualit&eacute;s</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="billeterie.html" class="active">Billetterie</a></li>
+    </ul>
+    <a class="nav-contact" href="contact.html">Contact</a>
+  </nav>
 
   <header>
     <h1>Billetterie - BruBasket 2026</h1>
 
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="calendrier.html">Calendrier</a></li>
-        <li><a href="classement.html">Classement</a></li>
-        <li><a href="equipes.html">Équipes</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
-        <li><a href="billeterie.html" class="active">Billetterie</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <h2>Compétition du 15-20 Octobre 2026</h2>
-    <p>Rue Eugène Falco n°78, 1000 Bruxelles. Inscrivez-vous ou achetez vos billets !</p>
+    <h2>Comp&eacute;tition du <time datetime="2026-10-15">15 octobre 2026</time> au <time datetime="2026-10-20">20 octobre 2026</time></h2>
+    <p>Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles. Inscrivez-vous ou achetez vos billets !</p>
   </header>
 
   <main>
@@ -36,49 +42,62 @@
 
       <table>
         <caption>Grille tarifaire</caption>
+        <colgroup>
+          <col style="width: 35%;">
+          <col style="width: 45%;">
+          <col style="width: 20%;">
+        </colgroup>
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Description</th>
-            <th>Prix</th>
+            <th scope="col">Type</th>
+            <th scope="col">Description</th>
+            <th scope="col">Prix</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Inscription Équipe</td>
-            <td>Par équipe (jusqu'à 12 joueurs)</td>
-            <td>200€</td>
+            <th scope="row">Inscription &Eacute;quipe</th>
+            <td>Par &eacute;quipe (jusqu'&agrave; 12 joueurs)</td>
+            <td>200&euro;</td>
           </tr>
           <tr>
-            <td>Inscription Joueur Libre</td>
+            <th scope="row">Inscription Joueur Libre</th>
             <td>Joueur individuel</td>
-            <td>25€</td>
+            <td>25&euro;</td>
           </tr>
           <tr>
-            <td>Billet Spectateur (1 jour)</td>
-            <td>Accès 1 jour</td>
-            <td>10€</td>
+            <th scope="row">Billet Spectateur (1 jour)</th>
+            <td>Acc&egrave;s 1 jour</td>
+            <td>10&euro;</td>
           </tr>
           <tr>
-            <td>Pass VIP (tout le tournoi)</td>
-            <td>Accès VIP complet</td>
-            <td>50€</td>
+            <th scope="row">Pass VIP (tout le tournoi)</th>
+            <td>Acc&egrave;s VIP complet</td>
+            <td>50&euro;</td>
           </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Tarifs donn&eacute;s &agrave; titre indicatif pour l'&eacute;dition 2026.</td>
+          </tr>
+        </tfoot>
       </table>
+
+      <p>La billetterie sera ouverte 1 mois avant le d&eacute;but de la comp&eacute;tition.</p>
 
     </section>
   </main>
 
   <footer>
     <div class="pied">
-      <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> 
-      | @BruBasket 
-      | Numéro : 04 75 89 68 68 
-      | Adresse : Rue Eugène Falco n°78 1000 Bruxelles
+      <address>
+        <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a>
+        | @BruBasket
+        | Num&eacute;ro : 04 75 89 68 68
+        | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+      </address>
     </div>
   </footer>
 
 </body>
 </html>
-
