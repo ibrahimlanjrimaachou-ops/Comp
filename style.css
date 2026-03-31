@@ -1,3 +1,254 @@
-body{
-    font-family: "Inter", sans-serif;
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin: 0;
+    background-color: #eaf4ff;
+    color: #16324f;
+}
+
+/* Barre de navigation simple */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 16px 24px;
+    background-color: #1d5fa2;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #dbeafe;
+    text-decoration: underline;
+}
+
+header,
+main {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+header {
+    padding-top: 24px;
+}
+
+main {
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+footer {
+    padding-bottom: 24px;
+}
+
+.pied {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #1d5fa2;
+    color: white;
+    text-align: center;
+}
+
+.pied a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: #0f3d75;
+}
+
+/* Style de la page classement */
+.page-classement header,
+.page-classement main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-classement section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.page-classement table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.page-classement caption {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0f3d75;
+}
+
+.page-classement th,
+.page-classement td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #c8d9eb;
+}
+
+.page-classement th {
+    background-color: #1d5fa2;
+    color: white;
+}
+
+.page-classement tbody tr:nth-child(even) {
+    background-color: #f2f8ff;
+}
+
+/* Petit bloc de boutons pour les categories */
+.boutons-classement {
+    margin-top: 16px;
+}
+
+.boutons-classement a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    border: 1px solid #1d5fa2;
+    border-radius: 8px;
+    background-color: #dcecff;
+    color: #0f3d75;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.legende-classement {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #f2f8ff;
+    border: 1px solid #c8d9eb;
+    border-radius: 8px;
+}
+
+.legende-classement p {
+    margin: 6px 0;
+}
+
+/* Style de la page actualites */
+.page-actualites header,
+.page-actualites main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-actualites section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.carte-actu {
+    padding: 18px 0;
+    border-bottom: 1px solid #c8d9eb;
+}
+
+.carte-actu:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.carte-actu h3 {
+    margin-bottom: 8px;
+}
+
+/* Style de la page inscription */
+.page-inscription header,
+.page-inscription main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-inscription section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.page-inscription img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 260px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.page-inscription form {
+    margin-top: 16px;
+}
+
+.page-inscription fieldset {
+    margin-bottom: 20px;
+    padding: 18px;
+    border: 1px solid #c8d9eb;
+    border-radius: 10px;
+    background-color: #f8fbff;
+}
+
+.page-inscription legend {
+    font-weight: bold;
+    color: #0f3d75;
+    padding: 0 8px;
+}
+
+.page-inscription label {
+    font-weight: 600;
+}
+
+.page-inscription input,
+.page-inscription select,
+.page-inscription textarea {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border: 1px solid #b7cde4;
+    border-radius: 8px;
+    background-color: white;
+    color: #16324f;
+    box-sizing: border-box;
+}
+
+.page-inscription textarea {
+    resize: vertical;
+}
+
+.page-inscription button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1d5fa2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page-inscription button:hover {
+    background-color: #154c83;
 }

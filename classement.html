@@ -3,66 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classement - Basket Contest</title>
+  <title>BruBasket - Classement</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="calendrier.html">Calendrier</a></li>
-        <li><a href="classement.html">Classement</a></li>
-        <li><a href="equipes.html">Équipes</a></li>
-        <li><a href="joueurs.html">Joueurs</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-  <!-- Titre principal de la page -->
+<body class="page-classement">
+  <ul class="menu">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="calendrier.html">Calendrier</a></li>
+    <li><a href="equipes.html">&Eacute;quipes</a></li>
+    <li><a href="classement.html">Classement</a></li>
+    <li><a href="actualites.html">Actualit&eacute;s</a></li>
+    <li><a href="inscription.html">Inscription</a></li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="billeterie.html">Billetterie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
   <header>
     <h1>Classement</h1>
-    <p>Consultez les resultats des equipes participantes.</p>
+    <p>Consultez les r&eacute;sultats provisoires des &eacute;quipes participantes.</p>
   </header>
-<!--idée : faire un classement par age (u17 u20 etc...)-->
+
   <main>
-    <!-- Un tableau suffit pour un projet simple -->
     <section>
-      <h2>Classement general</h2>
+      <h2>Classement g&eacute;n&eacute;ral</h2>
+      <p>Choisissez une cat&eacute;gorie pour voir son classement.</p>
+
+      <div class="boutons-classement">
+        <a href="#u17">U17</a>
+        <a href="#u18">U18</a>
+        <a href="#u20">U20</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Bar&egrave;me utilis&eacute;</h2>
+      <p>Pour cet exemple, une victoire rapporte 3 points, une d&eacute;faite 1 point et un forfait 0 point.</p>
+      <div class="legende-classement">
+        <p><strong>L&eacute;gende :</strong></p>
+        <p>V = victoire</p>
+        <p>D = d&eacute;faite</p>
+        <p>Forfait = 0 point</p>
+      </div>
+    </section>
+
+    <section id="u17">
+      <h2>Classement U17</h2>
+      <p>Voici un exemple de classement simple apr&egrave;s les premiers matchs du tournoi.</p>
+
       <table border="1">
+        <caption>Classement provisoire U17</caption>
         <thead>
           <tr>
             <th>Position</th>
-            <th>Equipe</th>
+            <th>&Eacute;quipe</th>
+            <th>Matchs jou&eacute;s</th>
+            <th>Victoires</th>
+            <th>D&eacute;faites</th>
             <th>Points</th>
+            <th>Forme</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
             <td>Lions</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
             <td>12</td>
+            <td>V V V V</td>
           </tr>
           <tr>
             <td>2</td>
             <td>Tigers</td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
             <td>10</td>
+            <td>V V D V</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Eagles</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
             <td>8</td>
+            <td>D V V D</td>
           </tr>
           <tr>
             <td>4</td>
             <td>Bulls</td>
+            <td>4</td>
+            <td>1</td>
+            <td>3</td>
             <td>6</td>
+            <td>D D V D</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Sharks</td>
+            <td>4</td>
+            <td>1</td>
+            <td>3</td>
+            <td>5</td>
+            <td>V D D D</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Falcons</td>
+            <td>4</td>
+            <td>0</td>
+            <td>4</td>
+            <td>3</td>
+            <td>D D D D</td>
           </tr>
         </tbody>
       </table>
     </section>
+
+    <section id="u18">
+      <h2>Classement U18</h2>
+      <table border="1">
+        <caption>Classement provisoire U18</caption>
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>&Eacute;quipe</th>
+            <th>Matchs jou&eacute;s</th>
+            <th>Victoires</th>
+            <th>D&eacute;faites</th>
+            <th>Points</th>
+            <th>Forme</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Brussels Stars</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>12</td>
+            <td>V V V V</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Blue Rockets</td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
+            <td>10</td>
+            <td>V V D V</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Thunder Kids</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>8</td>
+            <td>D V V D</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Red Storm</td>
+            <td>4</td>
+            <td>1</td>
+            <td>3</td>
+            <td>6</td>
+            <td>D D V D</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="u20">
+      <h2>Classement U20</h2>
+      <table border="1">
+        <caption>Classement provisoire U20</caption>
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>&Eacute;quipe</th>
+            <th>Matchs jou&eacute;s</th>
+            <th>Victoires</th>
+            <th>D&eacute;faites</th>
+            <th>Points</th>
+            <th>Forme</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Urban Wolves</td>
+            <td>4</td>
+            <td>4</td>
+            <td>0</td>
+            <td>12</td>
+            <td>V V V V</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Basket Pulse</td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
+            <td>10</td>
+            <td>V V D V</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rapid Fire</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>8</td>
+            <td>D V V D</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Street Dunkers</td>
+            <td>4</td>
+            <td>1</td>
+            <td>3</td>
+            <td>6</td>
+            <td>D D V D</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
   </main>
 
-  <footer>
-    <p>Classement mis a jour apres chaque competition.</p>
+  <footer class="pied">
+    <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket Num&eacute;ro : 04 75 89 68 68 Adresse : Rue Eug&egrave;ne Falco n&deg;78 1000 Bruxelles
   </footer>
 </body>
 </html>
