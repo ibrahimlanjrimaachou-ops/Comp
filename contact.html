@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Compétition de Basket - Contact</title>
 </head>
 <body>
     <header>
-        <h1>🏀 Compétition de Basket 2026 🏀</h1>
+        <h1>Compétition de Basket 2026</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -23,28 +24,35 @@
         </nav>
     </header>
     <main>
+    <section>
         <h2>Infos & Contact</h2>
+
         <form action="#" method="post">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Envoyer</button>
+            <fieldset>
+                <legend>Contact</legend>
+
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </fieldset>
         </form>
-        
-        <div class="info">
-            <h3>Informations sur la Compétition</h3>
-            <p><strong>Date:</strong>15-20 Octobre 2026 </p>
-            <p><strong>Lieu:</strong>Rue Eugène Falco n°78 1000 Bruxelles </p>
-            <p><strong>Email:</strong>brubasket@gmail.com </p>
-            <p><strong>Tél:</strong>04 75 89 68 68 </p>
-            <p><strong>Site:</strong>BruBasket </p>
-        </div>
+    </section>
+
+    <section class="info">
+        <h3>Informations sur la Compétition</h3>
+        <p><strong>Date:</strong> 15-20 Octobre 2026</p>
+        <p><strong>Lieu:</strong> Rue Eugène Falco n°78, 1000 Bruxelles</p>
+        <p><strong>Email:</strong> brubasket@gmail.com</p>
+        <p><strong>Tél:</strong> 04 75 89 68 68</p>
+        <p><strong>Site:</strong> BruBasket</p>
+    </section>
     </main>
     <footer>
       <div class = "pied"><a href ="mailto:brubasket@gmail.com">brubasket@gmail.com</a> @BruBasket  Numéro : 04 75 89 68 68 Adresse : Rue Eugène Falco n°78 1000 Bruxelles</div>   
