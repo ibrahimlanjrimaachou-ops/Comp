@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BruBasket - Classement</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
     </a>
     <ul class="menu">
       <li><a href="index.html">Accueil</a></li>
+      <li><a href="competitions.html">Comp&eacute;titions</a></li>
       <li><a href="calendrier.html">Calendrier</a></li>
       <li><a href="equipes.html">&Eacute;quipes</a></li>
       <li><a href="classement.html" class="active">Classement</a></li>
@@ -28,16 +30,23 @@
     <a class="nav-contact" href="contact.html">Contact</a>
   </nav>
 
-  <header>
-    <h1>Classement</h1>
-    <p>Consultez les r&eacute;sultats provisoires des &eacute;quipes participantes.</p>
+  <nav class="fil-ariane" aria-label="Fil d'Ariane">
+    <ol>
+      <li><a href="index.html">Accueil</a></li>
+      <li aria-current="page">Classement</li>
+    </ol>
+  </nav>
+
+  <header class="entete-page">
+    <h1>BruBasket</h1>
+    <h2>Classement</h2>
+    <p>Consultez les r&eacute;sultats provisoires des &eacute;quipes participantes dans chaque cat&eacute;gorie.</p>
   </header>
 
   <main>
     <section>
-      <h2>Classement g&eacute;n&eacute;ral</h2>
-      <p>Choisissez une cat&eacute;gorie pour voir son classement.</p>
-
+      <h3>Classement g&eacute;n&eacute;ral</h3>
+      <p>Choisissez une cat&eacute;gorie pour voir le classement correspondant.</p>
       <div class="boutons-classement">
         <a href="#u17">U17</a>
         <a href="#u18">U18</a>
@@ -45,211 +54,70 @@
       </div>
     </section>
 
-    <section>
-      <h2>Bar&egrave;me utilis&eacute;</h2>
-      <p>Pour cet exemple, une victoire rapporte 3 points, une d&eacute;faite 1 point et un forfait 0 point.</p>
-      <div class="legende-classement">
-        <p><strong>L&eacute;gende :</strong></p>
-        <p>V = victoire</p>
-        <p>D = d&eacute;faite</p>
-        <p>Forfait = 0 point</p>
-      </div>
-    </section>
-
     <section id="u17">
-      <h2>Classement U17</h2>
-      <p>Voici un exemple de classement simple apr&egrave;s les premiers matchs du tournoi.</p>
-
+      <h3>Classement U17</h3>
       <table>
         <caption>Classement provisoire U17</caption>
         <thead>
-          <tr>
-            <th scope="col">Position</th>
-            <th scope="col">&Eacute;quipe</th>
-            <th scope="col">Matchs jou&eacute;s</th>
-            <th scope="col">Victoires</th>
-            <th scope="col">D&eacute;faites</th>
-            <th scope="col">Points</th>
-            <th scope="col">Forme</th>
-          </tr>
+          <tr><th scope="col">Position</th><th scope="col">&Eacute;quipe</th><th scope="col">Matchs</th><th scope="col">Victoires</th><th scope="col">D&eacute;faites</th><th scope="col">Points</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <th scope="row">Lions</th>
-            <td>4</td>
-            <td>4</td>
-            <td>0</td>
-            <td>12</td>
-            <td>V V V V</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <th scope="row">Tigers</th>
-            <td>4</td>
-            <td>3</td>
-            <td>1</td>
-            <td>10</td>
-            <td>V V D V</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <th scope="row">Eagles</th>
-            <td>4</td>
-            <td>2</td>
-            <td>2</td>
-            <td>8</td>
-            <td>D V V D</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <th scope="row">Bulls</th>
-            <td>4</td>
-            <td>1</td>
-            <td>3</td>
-            <td>6</td>
-            <td>D D V D</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <th scope="row">Sharks</th>
-            <td>4</td>
-            <td>1</td>
-            <td>3</td>
-            <td>5</td>
-            <td>V D D D</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <th scope="row">Falcons</th>
-            <td>4</td>
-            <td>0</td>
-            <td>4</td>
-            <td>3</td>
-            <td>D D D D</td>
-          </tr>
+          <tr><td>1</td><th scope="row">Lions</th><td>4</td><td>4</td><td>0</td><td>12</td></tr>
+          <tr><td>2</td><th scope="row">Tigers</th><td>4</td><td>3</td><td>1</td><td>10</td></tr>
+          <tr><td>3</td><th scope="row">Eagles</th><td>4</td><td>2</td><td>2</td><td>8</td></tr>
         </tbody>
       </table>
     </section>
 
     <section id="u18">
-      <h2>Classement U18</h2>
+      <h3>Classement U18</h3>
       <table>
         <caption>Classement provisoire U18</caption>
         <thead>
-          <tr>
-            <th scope="col">Position</th>
-            <th scope="col">&Eacute;quipe</th>
-            <th scope="col">Matchs jou&eacute;s</th>
-            <th scope="col">Victoires</th>
-            <th scope="col">D&eacute;faites</th>
-            <th scope="col">Points</th>
-            <th scope="col">Forme</th>
-          </tr>
+          <tr><th scope="col">Position</th><th scope="col">&Eacute;quipe</th><th scope="col">Matchs</th><th scope="col">Victoires</th><th scope="col">D&eacute;faites</th><th scope="col">Points</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <th scope="row">Brussels Stars</th>
-            <td>4</td>
-            <td>4</td>
-            <td>0</td>
-            <td>12</td>
-            <td>V V V V</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <th scope="row">Blue Rockets</th>
-            <td>4</td>
-            <td>3</td>
-            <td>1</td>
-            <td>10</td>
-            <td>V V D V</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <th scope="row">Thunder Kids</th>
-            <td>4</td>
-            <td>2</td>
-            <td>2</td>
-            <td>8</td>
-            <td>D V V D</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <th scope="row">Red Storm</th>
-            <td>4</td>
-            <td>1</td>
-            <td>3</td>
-            <td>6</td>
-            <td>D D V D</td>
-          </tr>
+          <tr><td>1</td><th scope="row">Brussels Stars</th><td>4</td><td>4</td><td>0</td><td>12</td></tr>
+          <tr><td>2</td><th scope="row">Blue Rockets</th><td>4</td><td>3</td><td>1</td><td>10</td></tr>
+          <tr><td>3</td><th scope="row">Thunder Kids</th><td>4</td><td>2</td><td>2</td><td>8</td></tr>
         </tbody>
       </table>
     </section>
 
     <section id="u20">
-      <h2>Classement U20</h2>
+      <h3>Classement U20</h3>
       <table>
         <caption>Classement provisoire U20</caption>
         <thead>
-          <tr>
-            <th scope="col">Position</th>
-            <th scope="col">&Eacute;quipe</th>
-            <th scope="col">Matchs jou&eacute;s</th>
-            <th scope="col">Victoires</th>
-            <th scope="col">D&eacute;faites</th>
-            <th scope="col">Points</th>
-            <th scope="col">Forme</th>
-          </tr>
+          <tr><th scope="col">Position</th><th scope="col">&Eacute;quipe</th><th scope="col">Matchs</th><th scope="col">Victoires</th><th scope="col">D&eacute;faites</th><th scope="col">Points</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <th scope="row">Urban Wolves</th>
-            <td>4</td>
-            <td>4</td>
-            <td>0</td>
-            <td>12</td>
-            <td>V V V V</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <th scope="row">Basket Pulse</th>
-            <td>4</td>
-            <td>3</td>
-            <td>1</td>
-            <td>10</td>
-            <td>V V D V</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <th scope="row">Rapid Fire</th>
-            <td>4</td>
-            <td>2</td>
-            <td>2</td>
-            <td>8</td>
-            <td>D V V D</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <th scope="row">Street Dunkers</th>
-            <td>4</td>
-            <td>1</td>
-            <td>3</td>
-            <td>6</td>
-            <td>D D V D</td>
-          </tr>
+          <tr><td>1</td><th scope="row">Urban Wolves</th><td>4</td><td>4</td><td>0</td><td>12</td></tr>
+          <tr><td>2</td><th scope="row">Basket Pulse</th><td>4</td><td>3</td><td>1</td><td>10</td></tr>
+          <tr><td>3</td><th scope="row">Rapid Fire</th><td>4</td><td>2</td><td>2</td><td>8</td></tr>
         </tbody>
       </table>
     </section>
-
   </main>
 
   <footer class="pied">
-    <address>
-      <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
-    </address>
+    <div class="pied-contenu">
+      <ul class="menu-pied" aria-label="Menu de pied de page">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competitions.html">Comp&eacute;titions</a></li>
+        <li><a href="actualites.html">Actualit&eacute;s</a></li>
+        <li><a href="billeterie.html">Billetterie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="liens-sociaux" aria-label="R&eacute;seaux sociaux">
+        <a class="lien-social" href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/classement" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" alt="" aria-hidden="true">Facebook</a>
+        <a class="lien-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/icon-instagram.svg" alt="" aria-hidden="true">Instagram</a>
+        <a class="lien-social" href="https://twitter.com/intent/tweet?text=Classement%20BruBasket%202026" target="_blank" rel="noopener noreferrer"><img src="images/icon-x.svg" alt="" aria-hidden="true">X</a>
+      </div>
+      <address>
+        <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : <a href="tel:+32475896868">04 75 89 68 68</a> | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+      </address>
+    </div>
   </footer>
 </body>
 </html>

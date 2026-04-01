@@ -1,4 +1,4 @@
-# Compétition - Projet WEB1
+# Competition - Projet WEB1
 
 ## Equipe
 
@@ -9,26 +9,21 @@
 
 ## Structure du projet
 
-# Ibrahim :
+- Ibrahim : `index.html`, `calendrier.html`, `equipes.html`
+- Moussa : `competitions.html`, `fiche-match-finale.html`, `fiche-epreuve-concours-dunks.html`
+- Oubayda : `classement.html`, `actualites.html`, `inscription.html`
+- Alessandro : `galerie.html`, `billeterie.html`, `contact.html`
 
-- Accueil
-- Calendrier
-- Équipes
+## Pages complementaires
 
-# Moussa :
+- `fiche-equipe-lakers.html`
+- `actualites-archives.html`
 
-- Page X
-- Page Y
-- Page Z
+## Documents
 
-# Oubayda :
+- Programme PDF : `documents/programme-brubasket.pdf`
+- Contributions : `CONTRIBUTIONS.md`
 
-- Classement
-- Actualités
-- Inscription
+## Depot GitHub
 
-# Alessandro :
-
-- Galerie
-- Billetterie
-- Contact
+- A completer avant remise : lien du depot GitHub

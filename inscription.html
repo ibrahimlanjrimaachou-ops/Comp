@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BruBasket - Inscription et participation</title>
+  <title>BruBasket - Inscription</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
     </a>
     <ul class="menu">
       <li><a href="index.html">Accueil</a></li>
+      <li><a href="competitions.html">Comp&eacute;titions</a></li>
       <li><a href="calendrier.html">Calendrier</a></li>
       <li><a href="equipes.html">&Eacute;quipes</a></li>
       <li><a href="classement.html">Classement</a></li>
@@ -28,154 +30,90 @@
     <a class="nav-contact" href="contact.html">Contact</a>
   </nav>
 
-  <header>
-    <h1>Inscription et participation</h1>
-    <p>Rejoignez BruBasket 2026 et participez &agrave; une comp&eacute;tition conviviale et sportive &agrave; Bruxelles.</p>
+  <nav class="fil-ariane" aria-label="Fil d'Ariane">
+    <ol>
+      <li><a href="index.html">Accueil</a></li>
+      <li aria-current="page">Inscription</li>
+    </ol>
+  </nav>
+
+  <header class="entete-page">
+    <h1>BruBasket</h1>
+    <h2>Inscription et participation</h2>
+    <p>Rejoignez BruBasket 2026 et inscrivez votre &eacute;quipe ou votre venue en tant que spectateur.</p>
   </header>
 
   <main>
     <section>
-      <h2>Conditions de participation</h2>
+      <h3>Conditions de participation</h3>
       <ul>
         <li>Chaque &eacute;quipe peut inscrire jusqu'&agrave; 12 joueurs.</li>
         <li>Un responsable d'&eacute;quipe doit fournir une adresse email et un num&eacute;ro de t&eacute;l&eacute;phone valides.</li>
         <li>Les spectateurs peuvent consulter le calendrier avant de choisir leur date de venue.</li>
-        <li>Tous les participants doivent respecter les horaires et le r&egrave;glement du tournoi.</li>
       </ul>
     </section>
 
     <section>
-      <img class="illustration-inscription" src="images/image-inscription.jpg" alt="" aria-hidden="true">
-      <h2>Formulaire d'inscription</h2>
+      <img class="illustration-inscription" src="images/image-inscription.jpg" alt="Joueurs en action pendant un match de basketball">
+      <h3>Formulaire d'inscription</h3>
       <p>Choisissez votre type de participation puis remplissez la partie correspondante.</p>
       <input type="radio" id="participation-equipe" name="type-participation" value="equipe" checked>
       <input type="radio" id="participation-spectateur" name="type-participation" value="spectateur">
 
       <div class="choix-participation">
         <p class="titre-choix">Type de participation</p>
-
-        <p>
-          <label for="participation-equipe">Participation en tant qu'&eacute;quipe</label>
-        </p>
-
-        <p>
-          <label for="participation-spectateur">Participation en tant que spectateur</label>
-        </p>
+        <p><label for="participation-equipe">Participation en tant qu'&eacute;quipe</label></p>
+        <p><label for="participation-spectateur">Participation en tant que spectateur</label></p>
       </div>
 
       <form class="bloc-participation bloc-equipe" action="inscription.html" method="post">
-          <fieldset>
-            <legend>Participation en tant qu'&eacute;quipe</legend>
-
-            <p>
-              <label for="nom-equipe">Nom de l'&eacute;quipe :</label><br>
-              <input type="text" id="nom-equipe" name="nom-equipe" placeholder="Exemple : Brussels Lions" required minlength="2" maxlength="40" autocomplete="organization">
-            </p>
-
-            <p>
-              <label for="responsable-equipe">Nom du responsable :</label><br>
-              <input type="text" id="responsable-equipe" name="responsable-equipe" placeholder="Nom du responsable" required minlength="2" maxlength="60" autocomplete="name">
-            </p>
-
-            <p>
-              <label for="email-equipe">Email de contact :</label><br>
-              <input type="email" id="email-equipe" name="email-equipe" placeholder="exemple@mail.com" required autocomplete="email">
-            </p>
-
-            <p>
-              <label for="telephone-equipe">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
-              <input type="tel" id="telephone-equipe" name="telephone-equipe" placeholder="04 00 00 00 00" required autocomplete="tel" inputmode="tel" maxlength="20">
-            </p>
-
-            <p>
-              <label for="categorie">Cat&eacute;gorie :</label><br>
-              <select id="categorie" name="categorie" required>
-                <option value="" disabled selected>Choisissez une cat&eacute;gorie</option>
-                <option value="u17">U17</option>
-                <option value="u20">U20</option>
-                <option value="senior">Senior</option>
-              </select>
-            </p>
-
-            <p>
-              <label for="nombre-joueurs">Nombre de joueurs :</label><br>
-              <input type="number" id="nombre-joueurs" name="nombre-joueurs" min="5" max="12" required>
-            </p>
-
-            <p>
-              <label for="ville-equipe">Ville repr&eacute;sent&eacute;e :</label><br>
-              <input type="text" id="ville-equipe" name="ville-equipe" placeholder="Bruxelles" required minlength="2" maxlength="40" autocomplete="address-level2">
-            </p>
-
-            <p>
-              <label for="message-equipe">Message de l'&eacute;quipe :</label><br>
-              <textarea id="message-equipe" name="message-equipe" rows="5" cols="30" placeholder="Pr&eacute;cisez ici toute information utile." maxlength="500"></textarea>
-            </p>
-
-            <p>
-              <button type="submit">Envoyer la demande</button>
-            </p>
-          </fieldset>
+        <fieldset>
+          <legend>Participation en tant qu'&eacute;quipe</legend>
+          <p><label for="nom-equipe">Nom de l'&eacute;quipe</label><input type="text" id="nom-equipe" name="nom-equipe" required minlength="2" maxlength="40" autocomplete="organization"></p>
+          <p><label for="responsable-equipe">Nom du responsable</label><input type="text" id="responsable-equipe" name="responsable-equipe" required minlength="2" maxlength="60" autocomplete="name"></p>
+          <p><label for="email-equipe">Email de contact</label><input type="email" id="email-equipe" name="email-equipe" required autocomplete="email"></p>
+          <p><label for="telephone-equipe">Num&eacute;ro de t&eacute;l&eacute;phone</label><input type="tel" id="telephone-equipe" name="telephone-equipe" required autocomplete="tel"></p>
+          <p><label for="categorie">Cat&eacute;gorie</label><select id="categorie" name="categorie" required><option value="" disabled selected>Choisissez une cat&eacute;gorie</option><option value="u17">U17</option><option value="u18">U18</option><option value="u20">U20</option></select></p>
+          <p><label for="nombre-joueurs">Nombre de joueurs</label><input type="number" id="nombre-joueurs" name="nombre-joueurs" min="5" max="12" required></p>
+          <p><label for="ville-equipe">Ville repr&eacute;sent&eacute;e</label><input type="text" id="ville-equipe" name="ville-equipe" required minlength="2" maxlength="40"></p>
+          <p><label for="message-equipe">Message</label><textarea id="message-equipe" name="message-equipe" rows="5" maxlength="500"></textarea></p>
+          <p><button type="submit">Envoyer la demande</button></p>
+        </fieldset>
       </form>
 
       <form class="bloc-participation bloc-spectateur" action="inscription.html" method="post">
-          <fieldset>
-            <legend>Participation en tant que spectateur</legend>
-
-            <p>
-              <label for="nom-spectateur">Nom complet :</label><br>
-              <input type="text" id="nom-spectateur" name="nom-spectateur" placeholder="Votre nom complet" required minlength="2" maxlength="60" autocomplete="name">
-            </p>
-
-            <p>
-              <label for="email-spectateur">Email :</label><br>
-              <input type="email" id="email-spectateur" name="email-spectateur" placeholder="exemple@mail.com" required autocomplete="email">
-            </p>
-
-            <p>
-              <label for="telephone-spectateur">Num&eacute;ro de t&eacute;l&eacute;phone :</label><br>
-              <input type="tel" id="telephone-spectateur" name="telephone-spectateur" placeholder="04 00 00 00 00" required autocomplete="tel" inputmode="tel" maxlength="20">
-            </p>
-
-            <p>
-              <label for="date-spectateur">Date souhait&eacute;e :</label><br>
-              <input type="date" id="date-spectateur" name="date-spectateur" required min="2026-10-15" max="2026-10-20">
-            </p>
-
-            <p>
-              <label for="nombre-places">Nombre de places :</label><br>
-              <input type="number" id="nombre-places" name="nombre-places" min="1" max="10" required>
-            </p>
-
-            <p>
-              <label for="message-spectateur">Message :</label><br>
-              <textarea id="message-spectateur" name="message-spectateur" rows="4" cols="30" placeholder="Pr&eacute;cisez ici votre demande." maxlength="500"></textarea>
-            </p>
-
-            <p>
-              <button type="submit">Envoyer la demande</button>
-            </p>
-          </fieldset>
+        <fieldset>
+          <legend>Participation en tant que spectateur</legend>
+          <p><label for="nom-spectateur">Nom complet</label><input type="text" id="nom-spectateur" name="nom-spectateur" required minlength="2" maxlength="60" autocomplete="name"></p>
+          <p><label for="email-spectateur">Email</label><input type="email" id="email-spectateur" name="email-spectateur" required autocomplete="email"></p>
+          <p><label for="telephone-spectateur">Num&eacute;ro de t&eacute;l&eacute;phone</label><input type="tel" id="telephone-spectateur" name="telephone-spectateur" required autocomplete="tel"></p>
+          <p><label for="date-spectateur">Date souhait&eacute;e</label><input type="date" id="date-spectateur" name="date-spectateur" required min="2026-10-15" max="2026-10-20"></p>
+          <p><label for="nombre-places">Nombre de places</label><input type="number" id="nombre-places" name="nombre-places" min="1" max="10" required></p>
+          <p><label for="message-spectateur">Message</label><textarea id="message-spectateur" name="message-spectateur" rows="4" maxlength="500"></textarea></p>
+          <p><button type="submit">Envoyer la demande</button></p>
+        </fieldset>
       </form>
-
-      <form action="calendrier.html" method="get">
-        <p>
-          <button type="submit">Voir le calendrier</button>
-        </p>
-      </form>
-    </section>
-
-    <section>
-      <h2>Informations utiles</h2>
-      <p>Apr&egrave;s l'envoi du formulaire, l'organisation pourra vous recontacter pour confirmer votre participation.</p>
-      <p>Une r&eacute;ponse peut &ecirc;tre envoy&eacute;e dans un d&eacute;lai de 48 heures.</p>
     </section>
   </main>
 
   <footer class="pied">
-    <address>
-      <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
-    </address>
+    <div class="pied-contenu">
+      <ul class="menu-pied" aria-label="Menu de pied de page">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competitions.html">Comp&eacute;titions</a></li>
+        <li><a href="actualites.html">Actualit&eacute;s</a></li>
+        <li><a href="billeterie.html">Billetterie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="liens-sociaux" aria-label="R&eacute;seaux sociaux">
+        <a class="lien-social" href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/inscription" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" alt="" aria-hidden="true">Facebook</a>
+        <a class="lien-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/icon-instagram.svg" alt="" aria-hidden="true">Instagram</a>
+        <a class="lien-social" href="https://twitter.com/intent/tweet?text=Inscriptions%20BruBasket%202026" target="_blank" rel="noopener noreferrer"><img src="images/icon-x.svg" alt="" aria-hidden="true">X</a>
+      </div>
+      <address>
+        <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : <a href="tel:+32475896868">04 75 89 68 68</a> | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+      </address>
+    </div>
   </footer>
 </body>
 </html>

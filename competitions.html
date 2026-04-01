@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BruBasket - Comp&eacute;titions</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-competitions">
+  <nav class="barre-nav" aria-label="Navigation principale">
+    <a class="nav-logo" href="index.html">
+      <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+      <span>BruBasket</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competitions.html" class="active">Comp&eacute;titions</a></li>
+      <li><a href="calendrier.html">Calendrier</a></li>
+      <li><a href="equipes.html">&Eacute;quipes</a></li>
+      <li><a href="classement.html">Classement</a></li>
+      <li><a href="actualites.html">Actualit&eacute;s</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="billeterie.html">Billetterie</a></li>
+    </ul>
+    <a class="nav-contact" href="contact.html">Contact</a>
+  </nav>
+
+  <nav class="fil-ariane" aria-label="Fil d'Ariane">
+    <ol>
+      <li><a href="index.html">Accueil</a></li>
+      <li aria-current="page">Comp&eacute;titions</li>
+    </ol>
+  </nav>
+
+  <header class="entete-page">
+    <h1>BruBasket</h1>
+    <h2>Comp&eacute;titions et &eacute;preuves</h2>
+    <p>Explorez les diff&eacute;rentes cat&eacute;gories, les &eacute;preuves sp&eacute;ciales et les matchs phares de l'&eacute;dition 2026.</p>
+  </header>
+
+  <main>
+    <input type="radio" id="filtre-tout" name="filtre-categorie" checked>
+    <input type="radio" id="filtre-u17" name="filtre-categorie">
+    <input type="radio" id="filtre-u18" name="filtre-categorie">
+    <input type="radio" id="filtre-u20" name="filtre-categorie">
+
+    <section class="section-recherche-competition">
+      <h3>Trouver une &eacute;preuve</h3>
+      <div class="bloc-recherche bloc-recherche-filtres">
+        <h4>Recherche rapide</h4>
+        <form class="recherche-barre" action="competitions.html" method="get">
+          <label for="recherche-competition">Mot-cl&eacute;</label>
+          <input type="search" id="recherche-competition" name="q" placeholder="Exemple : finale, U18, concours de dunks">
+          <button type="submit">
+            <img src="images/icon-search.svg" alt="" aria-hidden="true">
+            Rechercher
+          </button>
+        </form>
+        <div class="filtres-competition-wrap">
+          <h4>Filtrer par cat&eacute;gorie</h4>
+          <div class="filtres-competition" role="group" aria-label="Filtres de comp&eacute;titions">
+            <label for="filtre-tout">Toutes</label>
+            <label for="filtre-u17">U17</label>
+            <label for="filtre-u18">U18</label>
+            <label for="filtre-u20">U20</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-catalogue">
+      <h3>Catalogue des comp&eacute;titions</h3>
+      <div class="competition-grid">
+        <article class="competition-card" data-cat="u17">
+          <h4>Phase de poules U17</h4>
+          <p>Des matchs rythm&eacute;s pour d&eacute;partager les jeunes talents de la comp&eacute;tition.</p>
+          <ul class="meta-competition">
+            <li><img src="images/icon-ticket.svg" alt="" aria-hidden="true">Cat&eacute;gorie U17</li>
+            <li><img src="images/icon-trophy.svg" alt="" aria-hidden="true">4 poules de 4 &eacute;quipes</li>
+          </ul>
+        </article>
+
+        <article class="competition-card" data-cat="u18">
+          <h4>Challenge 3 points U18</h4>
+          <p>Une &eacute;preuve technique ouverte aux meilleurs shooteurs de chaque &eacute;quipe.</p>
+          <ul class="meta-competition">
+            <li><img src="images/icon-ticket.svg" alt="" aria-hidden="true">Cat&eacute;gorie U18</li>
+            <li><img src="images/icon-trophy.svg" alt="" aria-hidden="true">S&eacute;ries + finale</li>
+          </ul>
+        </article>
+
+        <article class="competition-card" data-cat="u20">
+          <h4>Concours de dunks</h4>
+          <p>Une animation spectaculaire avec jury, notes artistiques et finale en nocturne.</p>
+          <ul class="meta-competition">
+            <li><img src="images/icon-ticket.svg" alt="" aria-hidden="true">Cat&eacute;gorie U20</li>
+            <li><img src="images/icon-trophy.svg" alt="" aria-hidden="true">Finale show du samedi soir</li>
+          </ul>
+          <p><a class="bouton-secondaire" href="fiche-epreuve-concours-dunks.html">Voir la fiche</a></p>
+        </article>
+
+        <article class="competition-card" data-cat="u17">
+          <h4>Match d'ouverture</h4>
+          <p>Le premier grand rendez-vous du tournoi pour lancer l'&eacute;v&eacute;nement devant le public.</p>
+          <ul class="meta-competition">
+            <li><img src="images/icon-ticket.svg" alt="" aria-hidden="true">Cat&eacute;gorie U17</li>
+            <li><img src="images/icon-trophy.svg" alt="" aria-hidden="true">Show d'introduction</li>
+          </ul>
+        </article>
+
+        <article class="competition-card" data-cat="u18">
+          <h4>Demi-finales U18</h4>
+          <p>Les quatre meilleures &eacute;quipes U18 s'affrontent pour une place en finale.</p>
+          <ul class="meta-competition">
+            <li><img src="images/icon-ticket.svg" alt="" aria-hidden="true">Cat&eacute;gorie U18</li>
+            <li><img src="images/icon-trophy.svg" alt="" aria-hidden="true">Phase &eacute;limination directe</li>
+          </ul>
+        </article>
+
+        <article class="competition-card" data-cat="u20">
+          <h4>Grande finale BruBasket</h4>
+          <p>Le match phare du tournoi avec pr&eacute;sentation des &eacute;quipes et remise des troph&eacute;es.</p>
+          <ul class="meta-competition">
+            <li><img src="images/icon-ticket.svg" alt="" aria-hidden="true">Cat&eacute;gorie U20</li>
+            <li><img src="images/icon-trophy.svg" alt="" aria-hidden="true">Finale officielle</li>
+          </ul>
+          <p><a class="bouton-secondaire" href="fiche-match-finale.html">Voir la fiche</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>Fiches d&eacute;taill&eacute;es disponibles</h3>
+      <div class="grille-cartes">
+        <article class="carte-simple">
+          <h4>Fiche &eacute;quipe</h4>
+          <p>D&eacute;couvrez la pr&eacute;sentation compl&egrave;te des Lakers Boys, leur effectif et leurs points forts.</p>
+          <p><a class="bouton-secondaire" href="fiche-equipe-lakers.html">Voir l'&eacute;quipe</a></p>
+        </article>
+        <article class="carte-simple">
+          <h4>Fiche match</h4>
+          <p>Retrouvez le contexte, les horaires et les animations pr&eacute;vues pour la finale du tournoi.</p>
+          <p><a class="bouton-secondaire" href="fiche-match-finale.html">Voir le match</a></p>
+        </article>
+        <article class="carte-simple">
+          <h4>Fiche &eacute;preuve</h4>
+          <p>Consultez les r&egrave;gles et le d&eacute;roulement du concours de dunks.</p>
+          <p><a class="bouton-secondaire" href="fiche-epreuve-concours-dunks.html">Voir l'&eacute;preuve</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="pied-contenu">
+      <ul class="menu-pied" aria-label="Menu de pied de page">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competitions.html">Comp&eacute;titions</a></li>
+        <li><a href="actualites.html">Actualit&eacute;s</a></li>
+        <li><a href="billeterie.html">Billetterie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="liens-sociaux" aria-label="R&eacute;seaux sociaux">
+        <a class="lien-social" href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/brubasket" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" alt="" aria-hidden="true">Facebook</a>
+        <a class="lien-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/icon-instagram.svg" alt="" aria-hidden="true">Instagram</a>
+        <a class="lien-social" href="https://twitter.com/intent/tweet?text=BruBasket%202026" target="_blank" rel="noopener noreferrer"><img src="images/icon-x.svg" alt="" aria-hidden="true">X</a>
+      </div>
+      <address>
+        <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : <a href="tel:+32475896868">04 75 89 68 68</a> | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+      </address>
+    </div>
+  </footer>
+</body>
+</html>

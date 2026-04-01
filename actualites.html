@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BruBasket - Actualit&eacute;s</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
     </a>
     <ul class="menu">
       <li><a href="index.html">Accueil</a></li>
+      <li><a href="competitions.html">Comp&eacute;titions</a></li>
       <li><a href="calendrier.html">Calendrier</a></li>
       <li><a href="equipes.html">&Eacute;quipes</a></li>
       <li><a href="classement.html">Classement</a></li>
@@ -28,55 +30,90 @@
     <a class="nav-contact" href="contact.html">Contact</a>
   </nav>
 
-  <header>
-    <h1>Actualit&eacute;s</h1>
-    <p>Suivez les derni&egrave;res informations du tournoi BruBasket 2026.</p>
+  <nav class="fil-ariane" aria-label="Fil d'Ariane">
+    <ol>
+      <li><a href="index.html">Accueil</a></li>
+      <li aria-current="page">Actualit&eacute;s</li>
+    </ol>
+  </nav>
+
+  <header class="entete-page">
+    <h1>BruBasket</h1>
+    <h2>Actualit&eacute;s</h2>
+    <p>Suivez les derni&egrave;res informations du tournoi, la programmation et les annonces importantes pour les &eacute;quipes comme pour les visiteurs.</p>
   </header>
 
   <main>
     <section>
-      <h2>Derni&egrave;res nouvelles</h2>
+      <h3>Derni&egrave;res nouvelles</h3>
 
       <article class="carte-actu">
-        <h3>Organisation de la finale</h3>
+        <h4>Organisation de la finale</h4>
         <p><strong>Date :</strong> <time datetime="2026-10-20">20 octobre 2026</time></p>
-        <p>Les organisateurs pr&eacute;parent activement la journ&eacute;e de finale afin d'offrir une cl&ocirc;ture &agrave; la hauteur de l'&eacute;v&eacute;nement. L'accueil du public, la gestion des &eacute;quipes qualifi&eacute;es, la remise des prix et l'animation autour du terrain font partie des &eacute;l&eacute;ments en cours de coordination. Une attention particuli&egrave;re est accord&eacute;e &agrave; l'ambiance du dernier jour, qui doit mettre en valeur les performances sportives r&eacute;alis&eacute;es pendant toute la semaine. L'objectif est de conclure le tournoi dans une atmosph&egrave;re festive, conviviale et m&eacute;morable.</p>
-        <p><a href="calendrier.html?phase=finale&date=2026-10-20">Consulter le programme de la finale</a></p>
+        <p>Les organisateurs pr&eacute;parent activement la journ&eacute;e de finale afin d'offrir une cl&ocirc;ture &agrave; la hauteur de l'&eacute;v&eacute;nement, avec accueil du public, animations et remise des prix.</p>
+        <p>Le dispositif pr&eacute;voit une ouverture anticip&eacute;e des portes, un speaker pour accompagner l'entr&eacute;e des &eacute;quipes, ainsi qu'une remise officielle des troph&eacute;es juste apr&egrave;s la rencontre. Les spectateurs sont invit&eacute;s &agrave; arriver en avance pour profiter de l'ambiance et des activit&eacute;s mises en place autour du terrain central.</p>
+        <p><a class="bouton-secondaire" href="fiche-match-finale.html">Consulter la fiche match</a></p>
       </article>
 
       <article class="carte-actu">
-        <h3>Lancement officiel du tournoi</h3>
+        <h4>Lancement officiel du tournoi</h4>
         <p><strong>Date :</strong> <time datetime="2026-10-15">15 octobre 2026</time></p>
-        <p>Le tournoi BruBasket 2026 d&eacute;butera avec une c&eacute;r&eacute;monie d'ouverture organis&eacute;e en d&eacute;but d'apr&egrave;s-midi, juste avant les premiers matchs. Ce moment permettra de pr&eacute;senter les &eacute;quipes participantes, les diff&eacute;rentes cat&eacute;gories et le programme g&eacute;n&eacute;ral de la semaine. Les joueurs, les accompagnateurs et le public pourront d&eacute;couvrir l'ambiance de la comp&eacute;tition avant le coup d'envoi officiel. Cette ouverture marquera le d&eacute;but de plusieurs jours plac&eacute;s sous le signe du sport, du fair-play et du spectacle.</p>
+        <p>Le tournoi BruBasket 2026 d&eacute;butera avec une c&eacute;r&eacute;monie d'ouverture organis&eacute;e avant les premiers matchs pour pr&eacute;senter les &eacute;quipes participantes et le programme g&eacute;n&eacute;ral.</p>
+        <p>Cette ouverture donnera le ton du week-end avec une pr&eacute;sentation des cat&eacute;gories U17, U18 et U20, un mot des organisateurs et une introduction des temps forts &agrave; ne pas manquer. L'objectif est de cr&eacute;er un vrai moment de lancement pour les joueurs, les accompagnants et les visiteurs pr&eacute;sents d&egrave;s le premier jour.</p>
       </article>
 
       <article class="carte-actu">
-        <h3>Nouvelles inscriptions confirm&eacute;es</h3>
+        <h4>Nouvelles inscriptions confirm&eacute;es</h4>
         <p><strong>Date :</strong> <time datetime="2026-09-18">18 septembre 2026</time></p>
-        <p>Trois nouvelles &eacute;quipes ont confirm&eacute; leur inscription cette semaine, ce qui rapproche encore davantage le tournoi de sa capacit&eacute; maximale. Cette augmentation du nombre de participants promet une comp&eacute;tition plus intense et plus vari&eacute;e, avec des profils d'&eacute;quipes diff&eacute;rents et des styles de jeu compl&eacute;mentaires. Les organisateurs poursuivent le travail de r&eacute;partition dans les poules afin de garantir un tournoi &eacute;quilibr&eacute; et dynamique. Les derni&egrave;res places restantes devraient &ecirc;tre attribu&eacute;es prochainement.</p>
+        <p>Trois nouvelles &eacute;quipes ont confirm&eacute; leur inscription cette semaine, ce qui rapproche davantage le tournoi de sa capacit&eacute; maximale.</p>
+        <p>Avec ces nouvelles confirmations, les organisateurs finalisent progressivement la composition des groupes et adaptent le planning des rencontres. Cette dynamique confirme l'int&eacute;r&ecirc;t croissant autour de l'&eacute;v&eacute;nement et permet de renforcer la qualit&eacute; sportive attendue sur l'ensemble de la comp&eacute;tition.</p>
       </article>
 
       <article class="carte-actu">
-        <h3>Ouverture de la participation</h3>
+        <h4>Ouverture de la participation</h4>
         <p><strong>Date :</strong> <time datetime="2026-09-05">5 septembre 2026</time></p>
-        <p>Les inscriptions sont officiellement ouvertes pour les &eacute;quipes, les responsables et les spectateurs qui souhaitent prendre part &agrave; l'&eacute;dition 2026 de BruBasket. Les candidats peuvent d&egrave;s maintenant consulter les conditions de participation, choisir leur cat&eacute;gorie et transmettre les informations demand&eacute;es via le formulaire en ligne. Cette phase d'inscription est importante pour permettre aux organisateurs d'anticiper la logistique, la composition des poules et le planning des rencontres. Les personnes int&eacute;ress&eacute;es sont invit&eacute;es &agrave; s'inscrire rapidement afin de garantir leur place.</p>
+        <p>Les inscriptions sont officiellement ouvertes pour les &eacute;quipes et les spectateurs qui souhaitent prendre part &agrave; l'&eacute;dition 2026 de BruBasket.</p>
+        <p>Les &eacute;quipes peuvent d&eacute;sormais envoyer leur dossier complet, choisir leur cat&eacute;gorie et consulter les conditions de participation. C&ocirc;t&eacute; public, les premi&egrave;res informations de billetterie et de pr&eacute;sence sur site sont disponibles pour pr&eacute;parer au mieux la venue des supporters.</p>
       </article>
-    </section>
 
-    <section>
-      <h2>&Agrave; retenir</h2>
-      <ul>
-        <li>Le tournoi se d&eacute;roule du 15 au 20 octobre 2026.</li>
-        <li>Le lieu de la comp&eacute;tition est &agrave; Bruxelles.</li>
-        <li>Les informations importantes seront publi&eacute;es ici r&eacute;guli&egrave;rement.</li>
-      </ul>
+      <div class="actualites-actions">
+        <div class="bloc-partage">
+          <h4>Partager les actualit&eacute;s</h4>
+          <div class="partage-social">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/actualites" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" alt="" aria-hidden="true">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?text=Actualites%20BruBasket%202026" target="_blank" rel="noopener noreferrer"><img src="images/icon-x.svg" alt="" aria-hidden="true">X</a>
+          </div>
+        </div>
+
+        <div class="bloc-pagination">
+          <h4>Pagination</h4>
+          <div class="pagination" aria-label="Pagination des actualit&eacute;s">
+            <span class="current" aria-current="page">1</span>
+            <a href="actualites-archives.html">2</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="pied">
-    <address>
-      <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
-    </address>
+    <div class="pied-contenu">
+      <ul class="menu-pied" aria-label="Menu de pied de page">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competitions.html">Comp&eacute;titions</a></li>
+        <li><a href="actualites.html">Actualit&eacute;s</a></li>
+        <li><a href="billeterie.html">Billetterie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="liens-sociaux" aria-label="R&eacute;seaux sociaux">
+        <a class="lien-social" href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/actualites" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" alt="" aria-hidden="true">Facebook</a>
+        <a class="lien-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/icon-instagram.svg" alt="" aria-hidden="true">Instagram</a>
+        <a class="lien-social" href="https://twitter.com/intent/tweet?text=Actualites%20BruBasket%202026" target="_blank" rel="noopener noreferrer"><img src="images/icon-x.svg" alt="" aria-hidden="true">X</a>
+      </div>
+      <address>
+        <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : <a href="tel:+32475896868">04 75 89 68 68</a> | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+      </address>
+    </div>
   </footer>
 </body>
 </html>

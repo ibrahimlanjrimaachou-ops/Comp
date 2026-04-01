@@ -1,233 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BruBasket - &Eacute;quipes</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BruBasket - &Eacute;quipes</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-equipes">
-    <nav class="barre-nav" aria-label="Navigation principale">
-        <a class="nav-logo" href="index.html">
-            <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
-            <span>BruBasket</span>
-        </a>
-        <ul class="menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="calendrier.html">Calendrier</a></li>
-            <li><a href="equipes.html" class="active">&Eacute;quipes</a></li>
-            <li><a href="classement.html">Classement</a></li>
-            <li><a href="actualites.html">Actualit&eacute;s</a></li>
-            <li><a href="inscription.html">Inscription</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="billeterie.html">Billetterie</a></li>
-        </ul>
-        <a class="nav-contact" href="contact.html">Contact</a>
-    </nav>
+  <nav class="barre-nav" aria-label="Navigation principale">
+    <a class="nav-logo" href="index.html">
+      <img src="images/logo-blanc.svg" alt="" aria-hidden="true">
+      <span>BruBasket</span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="competitions.html">Comp&eacute;titions</a></li>
+      <li><a href="calendrier.html">Calendrier</a></li>
+      <li><a href="equipes.html" class="active">&Eacute;quipes</a></li>
+      <li><a href="classement.html">Classement</a></li>
+      <li><a href="actualites.html">Actualit&eacute;s</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="billeterie.html">Billetterie</a></li>
+    </ul>
+    <a class="nav-contact" href="contact.html">Contact</a>
+  </nav>
 
-    <header>
-        <h1>&Eacute;quipes participantes</h1>
-        <p>Voici les &eacute;quipes d&eacute;j&agrave; inscrites pour l'&eacute;dition 2026 du tournoi BruBasket.</p>
-    </header>
+  <nav class="fil-ariane" aria-label="Fil d'Ariane">
+    <ol>
+      <li><a href="index.html">Accueil</a></li>
+      <li aria-current="page">&Eacute;quipes</li>
+    </ol>
+  </nav>
 
-    <main>
-        <section>
-            <h2>Liste des &eacute;quipes</h2>
-            <p>Cliquez sur une &eacute;quipe pour voir un exemple de composition et les postes des joueurs.</p>
-            <div class="liste-equipes">
-                <details class="equipe-deroulante">
-                    <summary>1. Lakers Boys</summary>
-                    <ul>
-                        <li>Yanis Moreau - Meneur</li>
-                        <li>Lucas Bernard - Arri&egrave;re</li>
-                        <li>Ilyes Haddad - Ailier</li>
-                        <li>Tom Leroy - Ailier fort</li>
-                        <li>Mehdi Rahmani - Pivot</li>
-                    </ul>
-                </details>
+  <header class="entete-page">
+    <h1>BruBasket</h1>
+    <h2>&Eacute;quipes participantes</h2>
+    <p>Consultez les compositions principales puis acc&eacute;dez &agrave; la fiche commune d&eacute;taill&eacute;e de chaque &eacute;quipe.</p>
+  </header>
 
-                <details class="equipe-deroulante">
-                    <summary>2. Les Montagnards</summary>
-                    <ul>
-                        <li>Adam Leclerc - Meneur</li>
-                        <li>Mathis Dubois - Arri&egrave;re</li>
-                        <li>Nassim El Amrani - Ailier</li>
-                        <li>Enzo Caron - Ailier fort</li>
-                        <li>Samir Boutaib - Pivot</li>
-                    </ul>
-                </details>
+  <main>
+    <section>
+      <h3>Liste des &eacute;quipes</h3>
+      <div class="liste-equipes">
+        <details class="equipe-deroulante">
+          <summary>1. Lakers Boys</summary>
+          <ul><li>Yanis Moreau - Meneur</li><li>Lucas Bernard - Arri&egrave;re</li><li>Ilyes Haddad - Ailier</li><li>Tom Leroy - Ailier fort</li><li>Mehdi Rahmani - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#lakers-boys">Voir la fiche</a></div>
+        </details>
+        <details class="equipe-deroulante">
+          <summary>2. Les Montagnards</summary>
+          <ul><li>Adam Leclerc - Meneur</li><li>Mathis Dubois - Arri&egrave;re</li><li>Nassim El Amrani - Ailier</li><li>Enzo Caron - Ailier fort</li><li>Samir Boutaib - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#les-montagnards">Voir la fiche</a></div>
+        </details>
+        <details class="equipe-deroulante">
+          <summary>3. BX Killers</summary>
+          <ul><li>Noah Simon - Meneur</li><li>Hugo Diallo - Arri&egrave;re</li><li>Rayan Lemaire - Ailier</li><li>Amine Farah - Ailier fort</li><li>Isma&euml;l Kone - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#bx-killers">Voir la fiche</a></div>
+        </details>
+        <details class="equipe-deroulante">
+          <summary>4. FC Auderghem</summary>
+          <ul><li>Julien Petit - Meneur</li><li>Ali Mansouri - Arri&egrave;re</li><li>Maxime Henry - Ailier</li><li>Bilal Saidi - Ailier fort</li><li>Arthur Renard - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#fc-auderghem">Voir la fiche</a></div>
+        </details>
+        <details class="equipe-deroulante">
+          <summary>5. Les Intouchables</summary>
+          <ul><li>Walid Bensalem - Meneur</li><li>Quentin Dupont - Arri&egrave;re</li><li>Ryan Jacobs - Ailier</li><li>Karim Ouali - Ailier fort</li><li>Thibaut Lambert - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#les-intouchables">Voir la fiche</a></div>
+        </details>
+        <details class="equipe-deroulante">
+          <summary>6. Black Panthers</summary>
+          <ul><li>Ahmed Jaziri - Meneur</li><li>Luca De Smet - Arri&egrave;re</li><li>Jordan Michel - Ailier</li><li>Hamza Idrissi - Ailier fort</li><li>Romain Denis - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#black-panthers">Voir la fiche</a></div>
+        </details>
+        <details class="equipe-deroulante">
+          <summary>7. Golden Falcons</summary>
+          <ul><li>Tristan Morel - Meneur</li><li>Nabil Ait Ahmed - Arri&egrave;re</li><li>Kylian Rossi - Ailier</li><li>Mohamed Tahiri - Ailier fort</li><li>Simon Vervoort - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#golden-falcons">Voir la fiche</a></div>
+        </details>
+        <details class="equipe-deroulante">
+          <summary>8. Sky Dunkers</summary>
+          <ul><li>Jules Lambert - Meneur</li><li>Marwan Bekkali - Arri&egrave;re</li><li>Ethan Colson - Ailier</li><li>Na&iuml;m El Idrissi - Ailier fort</li><li>Victor Maes - Pivot</li></ul>
+          <div class="equipe-actions"><a class="bouton-secondaire" href="fiches-equipes.html#sky-dunkers">Voir la fiche</a></div>
+        </details>
+      </div>
+    </section>
+  </main>
 
-                <details class="equipe-deroulante">
-                    <summary>3. BX Killers</summary>
-                    <ul>
-                        <li>Noah Simon - Meneur</li>
-                        <li>Hugo Diallo - Arri&egrave;re</li>
-                        <li>Rayan Lemaire - Ailier</li>
-                        <li>Amine Farah - Ailier fort</li>
-                        <li>Isma&euml;l Kone - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>4. FC Auderghem</summary>
-                    <ul>
-                        <li>Julien Petit - Meneur</li>
-                        <li>Ali Mansouri - Arri&egrave;re</li>
-                        <li>Maxime Henry - Ailier</li>
-                        <li>Bilal Saidi - Ailier fort</li>
-                        <li>Arthur Renard - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>5. Les Intouchables</summary>
-                    <ul>
-                        <li>Walid Bensalem - Meneur</li>
-                        <li>Quentin Dupont - Arri&egrave;re</li>
-                        <li>Ryan Jacobs - Ailier</li>
-                        <li>Karim Ouali - Ailier fort</li>
-                        <li>Thibaut Lambert - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>6. Black Panthers</summary>
-                    <ul>
-                        <li>Ahmed Jaziri - Meneur</li>
-                        <li>Luca De Smet - Arri&egrave;re</li>
-                        <li>Jordan Michel - Ailier</li>
-                        <li>Hamza Idrissi - Ailier fort</li>
-                        <li>Romain Denis - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>7. Golden Falcons</summary>
-                    <ul>
-                        <li>Tristan Morel - Meneur</li>
-                        <li>Nabil Ait Ahmed - Arri&egrave;re</li>
-                        <li>Kylian Rossi - Ailier</li>
-                        <li>Mohamed Tahiri - Ailier fort</li>
-                        <li>Simon Vervoort - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>8. Sky Dunkers</summary>
-                    <ul>
-                        <li>Jules Lambert - Meneur</li>
-                        <li>Marwan Bekkali - Arri&egrave;re</li>
-                        <li>Ethan Colson - Ailier</li>
-                        <li>Na&iuml;m El Idrissi - Ailier fort</li>
-                        <li>Victor Maes - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>9. Shadow Wolves</summary>
-                    <ul>
-                        <li>Ilian Dupuis - Meneur</li>
-                        <li>Ayoub El Khattabi - Arri&egrave;re</li>
-                        <li>Rapha&euml;l Martin - Ailier</li>
-                        <li>Sofiane Dahmani - Ailier fort</li>
-                        <li>Nolan Gr&eacute;goire - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>10. Crimson Ballers</summary>
-                    <ul>
-                        <li>Mehmet Aydin - Meneur</li>
-                        <li>Antoine Mercier - Arri&egrave;re</li>
-                        <li>Idriss Messaoudi - Ailier</li>
-                        <li>Paul Vanhamme - Ailier fort</li>
-                        <li>Riad Kaci - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>11. Titan Hoopers</summary>
-                    <ul>
-                        <li>Florian Rousseau - Meneur</li>
-                        <li>Youssef Belkacem - Arri&egrave;re</li>
-                        <li>Louis Delcourt - Ailier</li>
-                        <li>Anas Choukri - Ailier fort</li>
-                        <li>Cl&eacute;ment Evrard - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>12. Blue Vipers</summary>
-                    <ul>
-                        <li>Thomas Van Damme - Meneur</li>
-                        <li>Karim Benjelloun - Arri&egrave;re</li>
-                        <li>Jamal Traor&eacute; - Ailier</li>
-                        <li>Damien Lef&egrave;vre - Ailier fort</li>
-                        <li>Zakaria El Fassi - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>13. Ice Dragons</summary>
-                    <ul>
-                        <li>Alexis Jourdain - Meneur</li>
-                        <li>Rachid Benali - Arri&egrave;re</li>
-                        <li>Matteo Renson - Ailier</li>
-                        <li>Imran Nouri - Ailier fort</li>
-                        <li>Gabriel Simonet - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>14. Phantom Kings</summary>
-                    <ul>
-                        <li>Lorenzo Moretti - Meneur</li>
-                        <li>Sami El Ouahabi - Arri&egrave;re</li>
-                        <li>Kevin Dufour - Ailier</li>
-                        <li>Bilal Mokrani - Ailier fort</li>
-                        <li>Adrien Vandenberg - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>15. Brussels Giants</summary>
-                    <ul>
-                        <li>Martin De Wilde - Meneur</li>
-                        <li>Hamid Azzouzi - Arri&egrave;re</li>
-                        <li>Th&eacute;o Masson - Ailier</li>
-                        <li>Jibril Ciss&eacute; - Ailier fort</li>
-                        <li>Louis Meunier - Pivot</li>
-                    </ul>
-                </details>
-
-                <details class="equipe-deroulante">
-                    <summary>16. Royal Dunkers</summary>
-                    <ul>
-                        <li>Adrien Coppens - Meneur</li>
-                        <li>Hakim Boulahfa - Arri&egrave;re</li>
-                        <li>Math&eacute;o Leduc - Ailier</li>
-                        <li>Yacine Amara - Ailier fort</li>
-                        <li>Bastien Leroy - Pivot</li>
-                    </ul>
-                </details>
-            </div>
-        </section>
-
-        <section>
-            <h2>Places restantes</h2>
-            <p>Plus que 2 places disponibles pour compl&eacute;ter le tournoi.</p>
-            <p>Ne tardez pas &agrave; vous inscrire si votre &eacute;quipe souhaite participer &agrave; BruBasket 2026.</p>
-            <p><a class="bouton-decouvrir" href="inscription.html">S'inscrire</a></p>
-        </section>
-    </main>
-
-    <footer class="pied">
-        <address>
-            <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : 04 75 89 68 68 | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
-        </address>
-    </footer>
+  <footer class="pied">
+    <div class="pied-contenu">
+      <ul class="menu-pied" aria-label="Menu de pied de page">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competitions.html">Comp&eacute;titions</a></li>
+        <li><a href="actualites.html">Actualit&eacute;s</a></li>
+        <li><a href="billeterie.html">Billetterie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="liens-sociaux" aria-label="R&eacute;seaux sociaux">
+        <a class="lien-social" href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/equipes" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" alt="" aria-hidden="true">Facebook</a>
+        <a class="lien-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="images/icon-instagram.svg" alt="" aria-hidden="true">Instagram</a>
+        <a class="lien-social" href="https://twitter.com/intent/tweet?text=Equipes%20BruBasket%202026" target="_blank" rel="noopener noreferrer"><img src="images/icon-x.svg" alt="" aria-hidden="true">X</a>
+      </div>
+      <address>
+        <a href="mailto:brubasket@gmail.com">brubasket@gmail.com</a> | @BruBasket | Num&eacute;ro : <a href="tel:+32475896868">04 75 89 68 68</a> | Adresse : Rue Eug&egrave;ne Falco n&deg;78, 1000 Bruxelles
+      </address>
+    </div>
+  </footer>
 </body>
 </html>
