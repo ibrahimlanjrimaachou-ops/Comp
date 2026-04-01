@@ -17,7 +17,7 @@
 ## Pages complementaires
 
 - `fiche-equipe-lakers.html`
-- `actualites-archives.html`
+- `actualites2.html`
 
 ## Documents
 

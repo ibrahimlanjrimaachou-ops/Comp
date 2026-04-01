@@ -8,7 +8,7 @@ Ce document sert a identifier clairement la contribution de chaque membre, confo
 - Moussa Kourouma : `competitions.html`, `fiche-match-finale.html`, `fiche-epreuve-concours-dunks.html`
 - Oubayda Skhairi : `classement.html`, `actualites.html`, `inscription.html`
 - Alessandro Capaldi : `galerie.html`, `billeterie.html`, `contact.html`
-- Pages transversales a valider en groupe : `fiche-equipe-lakers.html`, `actualites-archives.html`
+- Pages transversales a valider en groupe : `fiche-equipe-lakers.html`, `actualites2.html`
 
 ## Travail transversal
 
