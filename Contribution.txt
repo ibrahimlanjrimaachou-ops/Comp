@@ -30,3 +30,5 @@ fiche-epreuve-concours-dunks.html : Page dédiée à l'événement spécial du c
 fiche-equipe-lakers.html : Exemple détaillé d'une fiche club présentant l'effectif complet et le palmarès de l'équipe des Lakers.
 
 actualites2.html : Page complémentaire pour l'archivage et la gestion des flux d'actualités secondaires ou historiques.
+
+lien github : https://github.com/ibrahimlanjrimaachou-ops/Comp/tree/main
