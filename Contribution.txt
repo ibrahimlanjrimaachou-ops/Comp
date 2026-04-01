@@ -1,0 +1,32 @@
+Répartition des pages et descriptifs
+Ibrahim
+index.html : Page d'accueil présentant les points forts de la compétition, les derniers résultats et les accès rapides aux sections principales.
+
+calendrier.html : Liste chronologique des rencontres et événements à venir, incluant les dates, heures et lieux.
+
+equipes.html : Répertoire complet des organisations participantes avec leurs logos et descriptions générales.
+
+Oubayda
+classement.html : Tableau dynamique des scores permettant de visualiser la hiérarchie des compétiteurs selon leurs performances.
+
+actualites.html : Flux d'articles récents couvrant les moments forts, les annonces officielles et les résumés de matchs.
+
+inscription.html : Formulaire interactif permettant aux nouveaux participants ou clubs de soumettre leur candidature.
+
+Alessandro
+galerie.html : Espace multimédia regroupant les clichés officiels et les meilleurs moments visuels de la compétition.
+
+billeterie.html : Interface de réservation et de vente de tickets permettant de choisir sa place et de consulter les tarifs.
+
+contact.html : Page de support incluant les coordonnées, un plan d'accès et un formulaire de demande d'information.
+
+Commun (push via le compte de Oubayda mais en réalité un travaille commun en appel discord)
+competitions.html : Vue d'ensemble des différents types de tournois et des catégories représentées.
+
+fiche-match-finale.html : Page de détails spécifique à la finale, incluant les compositions d'équipes et les statistiques en temps réel.
+
+fiche-epreuve-concours-dunks.html : Page dédiée à l'événement spécial du concours de dunks, avec présentation des participants et notation.
+
+fiche-equipe-lakers.html : Exemple détaillé d'une fiche club présentant l'effectif complet et le palmarès de l'équipe des Lakers.
+
+actualites2.html : Page complémentaire pour l'archivage et la gestion des flux d'actualités secondaires ou historiques.
